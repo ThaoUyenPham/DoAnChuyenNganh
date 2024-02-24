@@ -29,11 +29,11 @@
 <div class="_trangchu">
     <div class="mainLayout">
         <div class="main">
-            b
+            
         </div>
     </div>
 </div>
 
-<?php $this->template->display('footer.php'); ?>
+<!-- <?php $this->template->display('footer.php'); ?> -->
 </body>
 </html>

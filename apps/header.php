@@ -27,7 +27,7 @@
             <!-- <div class="RowHeader hollow"></div> -->
             <div class="container">
                 <div class="top-wrap">
-                    <div class="header-top-logo"><img src="logo.jpg" alt="" width="50%" height="90%"></div>
+                    <div class="header-top-logo"><img src="<?php echo SITE_ROOT_IMG;?>tttl/img/logo.webp" alt="" width="50%" height="90%"></div>
                     <div class="header-top-search">
                         <form action="" name="">
                             <div class="form-search">
@@ -69,14 +69,29 @@
         <div class="bottomHeader">
             <div class="container">
                 <div class="bottom-wrap">
-l
-                </div>
+                    <div class="containerBottom">
+			            <div class="f-menu-wrap">
+				            <div class="f-menu-nav">
+                                <a href="/" class="f-menu-nav-btn">
+                                    <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
+                                    <span>HOME</span>
+                                </a> 
+					            <div class="f-menu-nav-menu">
+                                    <div class="index-slider-nav">
+                                        <ul>
+                                            <li>
+                                                <a href="/collections/trang-diem">
+                                                    <i><img class="img-fluid" alt="Trang điểm" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_1.png?v=16638">
+                                                    </i>
+                                                <span>Trang điểm</span> 
+                                            </a> 
+                                        </li>	
+            
+                                        </ul></div>
+                                </div>
+		                    </div>
+                    </div>
             </div>
-            <!-- <div class="RowHeader hollow"></div>
-            <div class="RowHeader centerHeader">
-                giữa
-            </div>
-            <div class="RowHeader hollow"></div> -->
         </div>
     </div>
     
