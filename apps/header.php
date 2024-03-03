@@ -9,7 +9,7 @@
         'public/libs/ionicons/2.0.0/css/ionicons.min' => ['cache' => true],
         'public/libs/font-awesome-4.7.0/css/font-awesome.min' => ['cache' => true],
         'public/libs/bootstrap-3.3.7-dist/css/bootstrap.min' => ['cache' => true],
-        'public/css/cssHeader&Footer' => ['cache' => true]
+        'public/css/cssHeaderFooter' => ['cache' => true]
         
     ]);
     echo $context->getEmbedStylesheet();
@@ -44,6 +44,86 @@
                                 <div class="owl-item">
                                     <a href="">mặt nạ</a>
                                 </div>
+                                <div class="owl-item">
+                                    <a href="">son môi</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">má hồng</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">nước tẩy trang</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">sữa rửa mặt</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">kem chống nắng</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">serum</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">cushion</a></a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">kem nền</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">phấn phủ</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">toner</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">sữa tắm</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">mascara</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">merzy</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">romand</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">3ce</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">cocoon</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">má hồng</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">black rouge</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">bbia</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">zeeesa</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">dầu gội</a>
+                                </div><div class="owl-item">
+                                    <a href="">periera</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">M.O.I</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">tẩy tế bào chết</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">dưỡng ẩm</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">mặt nạ</a>
+                                </div>
+                                <div class="owl-item">
+                                    <a href="">son tobboki</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -71,28 +151,215 @@
                 <div class="bottom-wrap">
                     <div class="containerBottom">
 			            <div class="f-menu-wrap">
-				            <div class="f-menu-nav">
-                                <a href="/" class="f-menu-nav-btn">
-                                    <svg fill="none" height="24" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
-                                    <span>HOME</span>
-                                </a> 
-					            <div class="f-menu-nav-menu">
-                                    <div class="index-slider-nav">
-                                        <ul>
-                                            <li>
-                                                <a href="/collections/trang-diem">
-                                                    <i><img class="img-fluid" alt="Trang điểm" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_1.png?v=16638">
-                                                    </i>
-                                                <span>Trang điểm</span> 
-                                            </a> 
-                                        </li>	
-            
-                                        </ul></div>
-                                </div>
+				            <div class="f-menu">
+					            <ul class="info_menu">
+                                    <li class="home"><a href="#">HOME</a>
+                                        <div class="menu_box">
+                                            <div class="index-slider-nav">
+                                                <ul>
+                                                    <li>
+                                                        <div class="sticker">
+                                                            <img class="img-fluid" alt="Trang điểm" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_1.png?v=16638">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""><span>Trang điểm</span></a>
+                                                        </div> 
+                                                    </li>	
+                                                    <li>
+                                                        <div class="sticker">
+                                                            <img class="img-fluid" alt="Chăm sóc da mặt" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_2.png?v=16659">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""><span>Chăm sóc da mặt</span></a>
+                                                        </div>
+                                                    <li>
+                                                    <li>
+                                                        <div class="sticker">
+                                                            <img class="img-fluid" alt="Chăm sóc cơ thể" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_3.png?v=16659">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""><span>Chăm sóc cơ thể</span></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="sticker">
+                                                            <img class="img-fluid" alt="Chăm sóc tóc và da đầu" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_4.png?v=16659">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""><span>Chăm sóc tóc và da đầu</span></a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="sticker">
+                                                            <img class="img-fluid" alt="Chăm sóc cá nhân" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_5.png?v=16659">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""><span>Chăm sóc cá nhân</span> </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="sticker">
+                                                            <img class="img-fluid" alt="Nước hoa" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_6.png?v=16659">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""> <span>Nước hoa</span> </a>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="sticker">
+                                                        <img class="img-fluid" alt="Thiết bị làm đẹp" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_7.png?v=16855">
+                                                        </div>
+                                                        <div class="tittle">
+                                                            <a href=""><span>Thiết bị làm đẹp</span> </a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>                                            
+                                            
+                                        </div>                                        
+                                    </li>
+                                    <li>SALE</li>
+                                    <li>BÁN CHẠY</li>
+                                    <li>NEW</li>
+                                    <li>CHĂM SÓC DA
+                                        <span><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5 6L9 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg></span>
+                                        <div class="menu-list">
+                                            <div class="menu-list-sub">
+                                                <div class="container">
+                                                    <div class="menu-list-tittle"><span><b>CHĂM SÓC PHỤ KHOA</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Băng vệ sinh</li>
+                                                                <li>Dung dịch vệ sinh</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>QUY TRÌNH DƯỠNG DA</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Tẩy Trang</li>
+                                                                <li>Sửa Rửa Mặt</li>
+                                                                <li>Mặt Nạ Rửa Mặt</li>
+                                                                <li>Tẩy Da Chết</li>
+                                                                <li>Nước Hoa Hồng</li>
+                                                                <li>Tinh Chất Dưỡng</li>
+                                                                <li>Sữa Dưỡng</li>
+                                                                <li>Dưỡng Mắt/Mí</li>
+                                                                <li>Kem Dưỡng/Gel/Tinh Dầu</li>
+                                                                <li>Kem Tone Up</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>GIẢI PHÁP LÀN DA</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Mụn Đầu Đen</li>
+                                                                <li>Mụn Đỏ - Kích Ứng</li>
+                                                                <li>Dưỡng Trắng - Trị Thâm</li>
+                                                                <li>Mờ Nám Da</li>
+                                                                <li>Cấp Nước</li>
+                                                                <li>Tái Tạo - Chống Nắng</li>
+                                                                <li>Dưỡng Ẩm Da</li>
+                                                                <li>Trị Rạn Da</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>CHĂM SÓC CÁ NHÂN</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Khẩu Trang/ Rửa Tay</li>
+                                                                <li>Sơn Móng Tay</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>THIẾT BỊ LÀM ĐẸP</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Máy Chăm Sóc Da</li>
+                                                                <li>Máy rửa mặt</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>TRANG ĐIỂM
+                                        <span>
+                                            <svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 1L5 6L9 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="menu-list">
+                                            <div class="menu-list-sub">
+                                                <div class="container">
+                                                    <div class="menu-list-tittle"><span><b>MẶT</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Kem Lót</li>
+                                                                <li>Che Khuyết Điểm</li>
+                                                                <li>Bb Cream/ Kem Nền</li>
+                                                                <li>Phấn Nước</li>
+                                                                <li>Má Hồng</li>
+                                                                <li>Tạo Khối</li>
+                                                                <li>Phần Nền/Phấn Phủ</li>
+                                                                <li>Xịt Cố Định MakeUp</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>MẮT</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Kem Lót</li>
+                                                                <li>Kẻ Chân Mày</li>
+                                                                <li>Phấn Mắt/Nhũ Mắt</li>
+                                                                <li>Kẻ Viền Mắt</li>
+                                                                <li>Mascara</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>MÔI</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Son Lót</li>
+                                                                <li>Son Thỏi</li>
+                                                                <li>Son Kem</li>
+                                                                <li>Son Bóng/Son Tint</li>
+                                                                
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>DỤNG CỤ TRANG ĐIỂM</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Bông Tẩy Trang</li>
+                                                                <li>Cọ Trang Điểm</li>
+                                                                <li>Mút Trang Điểm</li>
+                                                                <li>Mi Giả/Dán M_1_PI</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="menu-list-tittle"><span><b>THIẾT BỊ LÀM ĐẸP</b></span>
+                                                        <div>
+                                                            <ul>
+                                                                <li>Máy Chăm Sóc Da</li>
+                                                                <li>Máy rửa mặt</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>                                    
+                                    </li>
+                                    <li>THƯƠNG HIỆU</li>
+                                </ul>
 		                    </div>
+                        </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
-    
 </div>
