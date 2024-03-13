@@ -15,9 +15,9 @@
             height: 100%;
         }
         #menu{
-    margin: 0;
-    padding: 0;
-    font-weight: 900;
+        margin: 0;
+        padding: 0;
+        font-weight: 900;
 }
 #menu ul {
    background-color: rgb(69, 69, 227); 
