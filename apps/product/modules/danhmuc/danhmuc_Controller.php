@@ -4,7 +4,7 @@ if (!defined('SERVER_ROOT')) {
     exit('No direct script access allowed');
 }
 
-class index_Controller extends Controller {
+class danhmuc_Controller extends Controller {
 
     public function __construct() { //ham cau truc, vd app la home/ke ben la module
         parent::__construct('product', 'danhmuc');
@@ -16,8 +16,11 @@ class index_Controller extends Controller {
     }
 
     public function index() {
-        $viewData['products'] = $this->model->getDanhSachSanPham();
-        $this->getView()->render('index', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
+        $viewData['type'] = get_request_var('t'); //url $_GET['t'] 
+        $gender = get_request_var('g');
+        $viewData['gender'] = $gender;
+        $viewData['products'] = $this->model->getDanhSachSanPhamTheoDanhMuc($gender);
+        $this->getView()->render('danhmuc', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
     }
 }
 ?>

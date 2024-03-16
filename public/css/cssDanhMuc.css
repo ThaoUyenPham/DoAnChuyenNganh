@@ -1,0 +1,169 @@
+body {
+    margin: 0 ;
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+._trangchu{
+    height: auto;
+}
+.mainLayout{
+    top:200px;
+    width: 100%;
+    height: 70em;
+    /* height: 200em; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_main{
+    width: 100%;
+    height: auto;
+}
+#menu{
+margin: 0;
+padding: 0;
+font-weight: 900;
+background-color: antiquewhite;
+}
+#menu ul {
+background-color: rgb(69, 69, 227); 
+list-style-type: none;
+text-align: center;
+background-image: linear-gradient(to bottom,rgb(69, 69, 227),white);
+}
+#menu li {
+display: inline-block;
+width: 200px;
+height: 40px;
+line-height: 40px;
+position: relative;
+}
+#menu ul li a {
+text-decoration: none;
+color: black;
+display: block;
+}
+#menu ul li a:hover {
+background:white;
+color: black;
+}
+.sub-menu {
+display: none;
+position: absolute;   
+}
+#menu ul li>.sub-menu {
+display: none;
+position: absolute;
+}
+#menu ul li:hover .sub-menu {
+display: block;
+z-index: 1;
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+}
+.trenhinh img {
+width: 100%;
+height: 100px;
+}
+.thucdon {
+width: 100%;
+height: 100px;
+background-color: black;
+}
+.lienhe {
+font-family: 'Times New Roman', Times, serif;
+font-size: 15px;
+width: 242px;
+height: 302px;
+color: white;
+background-color: #333;
+margin: 0;
+padding: 0;
+margin-bottom: -20px;
+padding-bottom: 12px;
+padding: 0 10px;
+}
+.lienhe p {
+margin-bottom: -10px;
+}
+
+/* .gioithieusp {
+width: 100%;
+height: 160px;
+background-color: white;
+text-align: left;
+font-size: 16px;
+padding-left: 60px;
+padding-top: 10px;
+} */
+.gioithieusp h3 {
+text-align: center;
+}
+.aoban {
+width: 100%;
+height: 250px;
+}
+.gia {
+width: 20%;
+height: 110%;
+background-color: white;
+float: left;
+padding: 2px 0;
+}
+.gia img {
+width: 100%;
+height: 200px;
+padding: 1px;
+}
+.gia a {
+color: red;
+height: 100%;
+}
+.khoangtrangduoi {
+width: 100%;
+height: 40px;
+padding-top: 20px;
+}
+.cuoi {
+width: 100%;
+height: 130px;
+background-color: darkblue;
+}
+.chinhsach {
+width: 25%;
+height: 130px;
+float: left;
+color: white;
+border: 1px solid yellow;
+}
+.free {
+width: 25%;
+height: 130px;
+padding-top: 50px;
+padding-left: 5px;
+float: left;
+}
+.vdgt{
+width: 100%;
+height:300px;
+background-color: aquamarine;
+}
+.vdgt p{
+color: blue;
+font-size:16px ;
+font-weight: bold;
+text-align: center;
+}
+.footer_container{
+    top:400px;
+}

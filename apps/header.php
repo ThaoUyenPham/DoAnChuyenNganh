@@ -27,7 +27,7 @@
             <!-- <div class="RowHeader hollow"></div> -->
             <div class="container">
                 <div class="top-wrap">
-                    <div class="header-top-logo"><img src="<?php echo SITE_ROOT_IMG;?>tttl/img/logo.webp" alt="" width="50%" height="90%"></div>
+                    <div class="header-top-logo"><a href="<?php echo SITE_ROOT;?>"><img src="<?php echo SITE_ROOT_IMG;?>tttl/img/logo.webp" alt="" width="50%" height="90%"></a></div>
                     <div class="header-top-search">
                         <form action="" name="">
                             <div class="form-search">
@@ -130,7 +130,7 @@
                     <div class="header-top-tools">
                         <div class="header-top-info">Hot line: 19054254</div>
                         <div class="header-top-icon">
-                            <a href=""><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="/product/login"><svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M11 13.125C14.3827 13.125 17.125 10.3827 17.125 7C17.125 3.61726 14.3827 0.875 11 0.875C7.61723 0.875 4.87497 3.61726 4.87497 7C4.87497 10.3827 7.61723 13.125 11 13.125ZM11 14C14.866 14 18 10.866 18 7C18 3.13401 14.866 0 11 0C7.13398 0 3.99997 3.13401 3.99997 7C3.99997 10.866 7.13398 14 11 14Z" fill="#212121"></path>
 								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.859157 20.9996C0.859202 20.9994 0.859254 20.9991 0.429561 20.8972C-0.000131505 20.7952 -6.79857e-05 20.7949 1.77457e-06 20.7946L0.000172552 20.7938L0.000627901 20.7917L0.00200095 20.7855L0.00665644 20.7651C0.0106313 20.748 0.0163807 20.724 0.0240861 20.6937C0.0394944 20.6329 0.0627409 20.5464 0.0952824 20.4378C0.160337 20.2207 0.262719 19.9148 0.414187 19.5496C0.716819 18.82 1.21751 17.8489 2.01193 16.8775C3.61168 14.9212 6.37431 13 11 13C15.6257 13 18.3883 14.9212 19.9881 16.8775C20.7825 17.8489 21.2832 18.82 21.5858 19.5496C21.7373 19.9148 21.8397 20.2207 21.9047 20.4378C21.9373 20.5464 21.9605 20.6329 21.9759 20.6937C21.9836 20.724 21.9894 20.748 21.9933 20.7651L21.998 20.7855L21.9994 20.7917L21.9998 20.7938L22 20.7946C22.0001 20.7949 22.0001 20.7952 21.5704 20.8972C21.1407 20.9991 21.1408 20.9994 21.1408 20.9996L21.1405 20.9981L21.1379 20.9866C21.1353 20.9756 21.1311 20.9578 21.125 20.9337C21.1128 20.8856 21.0932 20.8124 21.0648 20.7178C21.008 20.5284 20.9164 20.2537 20.7788 19.922C20.5034 19.258 20.0461 18.3709 19.321 17.4843C17.8818 15.7242 15.3592 13.9291 11 13.9291C6.64081 13.9291 4.11823 15.7242 2.67897 17.4843C1.9539 18.3709 1.49664 19.258 1.2212 19.922C1.08363 20.2537 0.99195 20.5284 0.935197 20.7178C0.906834 20.8124 0.887241 20.8856 0.875037 20.9337C0.868935 20.9578 0.864685 20.9756 0.862111 20.9866L0.859488 20.9981L0.859157 20.9996ZM21.1409 20.9999C21.1409 21 21.1409 21 21.1409 20.9999L21.1409 20.9999Z" fill="#212121"></path>
 							</svg></a>
@@ -162,7 +162,7 @@
                                                             <img class="img-fluid" alt="Trang điểm" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_1.png?v=16638">
                                                         </div>
                                                         <div class="tittle">
-                                                            <a href=""><span>Trang điểm</span></a>
+                                                            <a href="/product/danh-sach?t=t_shirt&g=12"><span>Trang điểm</span></a>
                                                         </div> 
                                                     </li>	
                                                     <li>
@@ -231,24 +231,18 @@
                                                     <div class="menu-list-tittle"><span><b>CHĂM SÓC PHỤ KHOA</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Băng vệ sinh</li>
-                                                                <li>Dung dịch vệ sinh</li>
+                                                                <li><a href="">Băng vệ sinh</a></li>
+                                                                <li><a href="">Dung dịch vệ sinh</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="menu-list-tittle"><span><b>QUY TRÌNH DƯỠNG DA</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Tẩy Trang</li>
-                                                                <li>Sửa Rửa Mặt</li>
-                                                                <li>Mặt Nạ Rửa Mặt</li>
-                                                                <li>Tẩy Da Chết</li>
-                                                                <li>Nước Hoa Hồng</li>
-                                                                <li>Tinh Chất Dưỡng</li>
-                                                                <li>Sữa Dưỡng</li>
-                                                                <li>Dưỡng Mắt/Mí</li>
-                                                                <li>Kem Dưỡng/Gel/Tinh Dầu</li>
-                                                                <li>Kem Tone Up</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=2">Tẩy Trang</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=6">Sửa Rửa Mặt</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=12">Mặt Nạ Rửa Mặt</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=5">Tẩy Da Chết</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>

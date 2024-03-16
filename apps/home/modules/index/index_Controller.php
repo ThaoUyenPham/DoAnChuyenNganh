@@ -16,8 +16,15 @@ class index_Controller extends Controller {
     }
 
     public function index() {
-        $viewData['products'] = $this->model->getDanhSachSanPham();
+        $viewData['products'] = $this->model->getChamsocda();
+        $viewData['hair'] = $this->model->getChamsoctoc();
+        $viewData['sale'] = $this->model->getSaleTrangdiem();
+        $viewData['saleNuocTT'] = $this->model->getSaleNuoctaytrang();
+        $viewData['saleSon'] = $this->model->getSaleSon();
+        $viewData['thuonghieu'] = $this->model->getThuonghieu();
+
         $this->getView()->render('index', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
     }
+    
 }
 ?>

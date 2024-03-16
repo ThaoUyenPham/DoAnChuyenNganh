@@ -12,10 +12,14 @@
     position: fixed;
     z-index: 999;
 }
+._trangchu{
+    height: auto;
+}
 .mainLayout{
-    top:180px;
+    /* top:180px; */
     width: 100%;
     height: auto;
+    /* height: 200em; */
     display: flex;
     flex-direction: column;
     position: relative;
@@ -79,7 +83,7 @@
     cursor: hand;
 }
 /*san pham*/
-.container-fluid{
+.containerr-fluid{
     width: 100%;
     height: 100%;
     padding: 0;
@@ -104,18 +108,22 @@
     height: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    display: contents;
 }
 .product_item{
     width: 100%;
     height: 100%;
     float: left;
     text-align: center;
+    border: 1px solid rgb(229, 227, 227);
+    padding:5px;
 }
 
 .product_img{
     width: 100%;
-    height: 65%;
+    height: 60%;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 .product_img a img{
     height: 100%;
@@ -127,9 +135,10 @@
 }
 .product_text{
     width: 100%;
-    height: 35%;
+    height: 40%;
     text-align: left;
 }
+
 /**/
 .brandlist{
     height: 900;
@@ -157,6 +166,7 @@
 .product_col_brand{
     width: 100%;
     margin: 5px;
+    height: 100%;
     border: 1px solid rgb(215, 212, 212);
 }
 .product_item_brand{
@@ -168,7 +178,7 @@
 
 .product_img_brand{
     width: 100%;
-    height: 45%;
+    height: 50%;
     overflow: hidden;
 }
 .product_img_brand a img{
@@ -180,7 +190,7 @@
 }
 .product_text_brand{
     width: 100%;
-    height: 60%;
+    height: 50%;
     text-align: left;
     padding-left: 10px;
     padding-right: 10px;
@@ -199,7 +209,67 @@
 }
 .product_front_brand{
     text-wrap: wrap;
+    height: 50%;
+}
+.product_front{
+    height: 50%;
 }
 .brand-price b{
     color: #b50014;
+}
+.index-hotdeal-products{
+    margin-top: 15px;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.owl-stage-outer{
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+}
+.index-hotdeal-item{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.index-hotdeal-item-wrap a img{
+    width: 100%;
+}
+.index-hotdeal-item-products{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: -60px;
+    padding: 1px;
+    padding-right: 0;
+}
+.proLoop, .relative{
+    width: 50%;
+}
+.proLoop-wrap{
+    margin-left: 0.5px;
+    margin-right: 0.5px;
+    background: #fff;
+}
+.productImg{
+    position: relative;
+    overflow: hidden;
+}
+.proLoop-wrap-info{
+    width: 100%;
+    height: auto !important;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+.row-productt{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
 }
