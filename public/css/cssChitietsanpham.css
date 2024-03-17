@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+._trangchu{
+    height: auto;
+}
+.mainLayout{
+    top:200px;
+    width: 100%;
+    height: 130em;
+    /* height: 200em; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content_main{
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.muahang{
+    width:100%;
+   height:470px; 
+     }
+     .trongmuahang{
+       width: 100%;
+       float: left;
+   height: 410px;
+   margin-left: 35px;
+       margin-top: 30px;
+     }
+     .ngoai{
+       width: 100%;
+       height: 100%;
+     }
+
+     .hinhmuahang{
+       width: 40%;
+       height: 410px;
+       float: left;
+       
+     }
+    .hinhlon img {
+       width: 100%;
+       height: 350px;
+       
+       
+    }
+    .hinhnho img{
+       width: 100%;
+       height: 60px;
+     
+    }
+    .nho{
+       width: 25%;
+       height: 60px;
+       float: left;
+       border: 1px solid white;
+      
+    }
+    .thanhtoan{
+       width: 60%;
+       height: 410px;
+       padding-left: 30px;
+       float: left;
+      
+    }
+    .thanhtoan p{
+       font-size: 15px;
+       font-weight: bold;
+    }
+    .thanhtoan h4{
+       color:red;
+    }
+    .thanhtoan a{
+       font-size: 14px;
+       color:teal;
+    }
+    .thanhtoan input{
+       width: 50px;
+    }
+
+    
+    .nhap input{
+       width: 130px;
+       height: 40px;
+    }
+    .khoangtrang{
+       background-color:  rgb(69, 69, 227);
+       color: white;
+    }
+    .mota{
+       width: 100%;
+       height: 800px;
+       padding-left: 80px;
+    }
+    .mota p{
+       font-size: 17px;
+       padding-bottom: 3px;
+    }
+    .duoi{
+       padding-top: 10px;
+   }
+   .lienhe{
+       display: flex;
+       justify-content: space-around;
+       padding: 20px 500px;
+       background-color: rgb(203, 201, 201);
+       margin-top: 10px;
+   }
+   .phoneemail a{
+       text-decoration: none;
+   }
+   .duoicung{
+       display: flex;
+       justify-content: space-between;
+       padding: 30px 100px;
+   }

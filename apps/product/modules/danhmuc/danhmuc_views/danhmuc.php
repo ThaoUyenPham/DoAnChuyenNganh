@@ -77,27 +77,5 @@
 </body>
 </html>
 <script>
-    let user=[];
-    let currentPage=1
-    let perPage=2
-    let totalPage=user.length/2
-    let perUsesr=[]
-    function OpenTab(evt, productName) {
-        var i, TabContentX,TabContentQL, tablinks;
-        TabContentX = document.getElementsByClassName("TabContentX");
-        TabContentQL = document.getElementsByClassName("TabContentQL");
- 
-        for (i = 0; i < TabContentX.length; i++) {
-            TabContentX[i].style.display = "none";
-        }
-        for (i = 0; i < TabContentQL.length; i++) {
-            TabContentQL[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(productName).style.display = "block";
-        evt.currentTarget.className += " active";
-        }
+   
 </script>

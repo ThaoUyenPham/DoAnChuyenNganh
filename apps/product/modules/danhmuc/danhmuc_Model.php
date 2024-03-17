@@ -8,7 +8,7 @@ class danhmuc_Model extends Model {
         $query = "select * from qldoanchuyennganh.sanpham";
         return $this->qSelect($query);
     }
-    public function getDanhSachSanPhamTheoDanhMuc($gender){
+    public function getDanhSachSanPhamTheoTTCTDM($gender){
         $query = "select distinct IdSP,Tieude,Gia,KhuyenMai,Hinh from qldoanchuyennganh.sanpham 
         where Id_TTCTDM=".$gender." limit 10";
         return $this->qSelect($query);

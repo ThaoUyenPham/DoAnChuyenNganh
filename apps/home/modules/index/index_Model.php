@@ -34,8 +34,9 @@ class index_Model extends Model {
         return $this->qSelect($query);
     }
     public function getThuonghieu(){
-        $query = "select DISTINCT sp.Hinh,Tieude,Gia,KhuyenMai from qldoanchuyennganh.danhmuc dm, 
-        qldoanchuyennganh.sanpham sp where dm.IdDM= sp.Id_DM and sp.Tieude like '%CoCoon%' limit 8;";
+        $query = "select sp.Hinh,Tieude,Gia,KhuyenMai from qldoanchuyennganh.danhmuc dm, 
+        qldoanchuyennganh.sanpham sp where dm.IdDM= sp.Id_DM and sp.Tieude 
+        like '%CoCoon%' limit 8";
         return $this->qSelect($query);
     }
 }

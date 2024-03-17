@@ -253,6 +253,10 @@
 .footer_social div ul{
     display: flex;
 }
+.footer_social div ul li{
+    list-style: none;
+    text-decoration: none;
+}
 /**/
 .footer_subbox{
     width: 35%;
@@ -268,4 +272,5 @@
 }
 .footer_subbox div ul li{
     padding: 0.3em;
+    list-style: none;
 }

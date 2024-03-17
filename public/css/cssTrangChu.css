@@ -150,7 +150,7 @@
 .brandleft{
     width: 100%;
 }
-.brandright{
+#brandright{
     width: 100%;
     background-color: transparent;
     padding-left: 20px;

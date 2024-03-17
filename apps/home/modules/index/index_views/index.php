@@ -151,11 +151,11 @@
                         <div class="brandleft">
                             <a href=""><img src="tttl/img/banner1.webp" alt="" style="width:100%;height:100%"></a>
                         </div>
-                        <div class="brandright">
+                        <div id="brandright" class="TabContentX">
                             <h3>THƯƠNG HIỆU NỔI BẬT</h3>
                         <div class="row-product_brand">
                             <?php if(count($thuonghieu) > 0){ 
-                                            foreach($thuonghieu as $th){
+                                foreach($thuonghieu as $th){
                             ?>
                                 <div class="product_col_brand">
                                     <div class="product_item_brand">
@@ -180,153 +180,9 @@
                                         </div>                                                            
                                     </div>
                                 </div>
-                                <?php }}?>
-                                <!-- <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div>
-                                <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div>
-                                <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div>
-                                <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div>
-                                <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div>
-                                <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div>
-                                <div class="product_col_brand">
-                                    <div class="product_item_brand">
-                                        <div class="product_img_brand">
-                                            <a href="#">
-                                                <img src="tttl/img/son1.webp">
-                                            </a>
-                                        </div>
-                                        <div class="product_text_brand">
-                                            <div class="proLoops">
-                                                <span class="proLoop-label-freeship" style="background-color:#002351">FREESHIP TQ</span>
-                                                <span class="proLoop-label-freeship" style="background-color:#b50014">BEST</span>
-                                            </div>
-                                            <div class="product_front_brand">
-                                                <p>[PHIÊN BẢN V6 SIREN HOLIDAY] Son Kem Lì, Bền Màu, Lâu Trôi Merzy The First Velvet Tint 4.5g</p>
-                                            </div>
-                                            <p class="brand-price"><b>123.11</b></p>
-                                        </div>                                                            
-                                    </div>
-                                </div> -->
+                            <?php }}?>
                             </div>
-                            <ul class="pagination">
-                                    <li><a href="?per_page=4&page=1">1</a></li>
-                                    <li><a href="?per_page=4&page=2">2</a></li>
-                                    <li><a href="?per_page=4&page=3">3</a></li>
-                                    <li><a href="?per_page=4&page=4">4</a></li>
-                                    <li><a href="?per_page=4&page=5">5</a></li>
-                                    <li><a href="?per_page=4&page=6">6</a></li>
-                                    <li><a href="?per_page=4&page=7">7</a></li>
-                                
-                                </ul>
                         </div>
-                        
                     </div>
                     <h4>CHĂM SÓC DA</h4>
                     <div class="slide-product">
@@ -476,6 +332,12 @@
 </body>
 </html>
 <script>
+   
+
+
+
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

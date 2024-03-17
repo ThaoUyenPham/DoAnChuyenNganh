@@ -153,8 +153,8 @@
 			            <div class="f-menu-wrap">
 				            <div class="f-menu">
 					            <ul class="info_menu">
-                                    <li class="home"><a href="#">HOME</a>
-                                        <div class="menu_box">
+                                    <li class="home"><a href="">HOME</a>
+                                        <!-- <div class="menu_box">
                                             <div class="index-slider-nav">
                                                 <ul>
                                                     <li>
@@ -162,7 +162,7 @@
                                                             <img class="img-fluid" alt="Trang điểm" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_1.png?v=16638">
                                                         </div>
                                                         <div class="tittle">
-                                                            <a href="/product/danh-sach?t=t_shirt&g=12"><span>Trang điểm</span></a>
+                                                            <a href=""><span>Trang điểm</span></a>
                                                         </div> 
                                                     </li>	
                                                     <li>
@@ -216,7 +216,7 @@
                                                 </ul>
                                             </div>                                            
                                             
-                                        </div>                                        
+                                        </div>                                         -->
                                     </li>
                                     <li>SALE</li>
                                     <li>BÁN CHẠY</li>
@@ -231,15 +231,15 @@
                                                     <div class="menu-list-tittle"><span><b>CHĂM SÓC PHỤ KHOA</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li><a href="">Băng vệ sinh</a></li>
-                                                                <li><a href="">Dung dịch vệ sinh</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=13">Băng vệ sinh</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=14">Dung dịch vệ sinh</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="menu-list-tittle"><span><b>QUY TRÌNH DƯỠNG DA</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=2">Tẩy Trang</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=5">Tẩy Trang</a></li>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=6">Sửa Rửa Mặt</a></li>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=12">Mặt Nạ Rửa Mặt</a></li>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=5">Tẩy Da Chết</a></li>
@@ -249,21 +249,17 @@
                                                     <div class="menu-list-tittle"><span><b>GIẢI PHÁP LÀN DA</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Mụn Đầu Đen</li>
-                                                                <li>Mụn Đỏ - Kích Ứng</li>
-                                                                <li>Dưỡng Trắng - Trị Thâm</li>
-                                                                <li>Mờ Nám Da</li>
-                                                                <li>Cấp Nước</li>
-                                                                <li>Tái Tạo - Chống Nắng</li>
-                                                                <li>Dưỡng Ẩm Da</li>
-                                                                <li>Trị Rạn Da</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Mụn Đầu Đen</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=8">Trị Nám</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=12">Cấp Ẩm</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=8">Mờ Nám Da</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="menu-list-tittle"><span><b>CHĂM SÓC CÁ NHÂN</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Khẩu Trang/ Rửa Tay</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=8">Khẩu Trang/ Rửa Tay</a></li>
                                                                 <li>Sơn Móng Tay</li>
                                                             </ul>
                                                         </div>
@@ -292,10 +288,10 @@
                                                     <div class="menu-list-tittle"><span><b>MẶT</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Kem Lót</li>
-                                                                <li>Che Khuyết Điểm</li>
-                                                                <li>Bb Cream/ Kem Nền</li>
-                                                                <li>Phấn Nước</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Kem Lót</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Che Khuyết Điểm</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Bb Cream/ Kem Nền</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Phấn Nước</a></li>
                                                                 <li>Má Hồng</li>
                                                                 <li>Tạo Khối</li>
                                                                 <li>Phần Nền/Phấn Phủ</li>
@@ -306,39 +302,35 @@
                                                     <div class="menu-list-tittle"><span><b>MẮT</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Kem Lót</li>
-                                                                <li>Kẻ Chân Mày</li>
-                                                                <li>Phấn Mắt/Nhũ Mắt</li>
-                                                                <li>Kẻ Viền Mắt</li>
-                                                                <li>Mascara</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=3">Kẻ Chân Mày</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=4">Phấn Mắt/Nhũ Mắt</a></li>
+                                                                <!-- <li>Kẻ Viền Mắt</li>
+                                                                <li>Mascara</li> -->
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="menu-list-tittle"><span><b>MÔI</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Son Lót</li>
-                                                                <li>Son Thỏi</li>
-                                                                <li>Son Kem</li>
-                                                                <li>Son Bóng/Son Tint</li>
-                                                                
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=1">Son Dưỡng</a></li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=2">Son Kem</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="menu-list-tittle"><span><b>DỤNG CỤ TRANG ĐIỂM</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Bông Tẩy Trang</li>
-                                                                <li>Cọ Trang Điểm</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=5">Bông Tẩy Trang</a></li>
+                                                                <!-- <li>Cọ Trang Điểm</li>
                                                                 <li>Mút Trang Điểm</li>
-                                                                <li>Mi Giả/Dán M_1_PI</li>
+                                                                <li>Mi Giả/Dán M_1_PI</li> -->
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="menu-list-tittle"><span><b>THIẾT BỊ LÀM ĐẸP</b></span>
                                                         <div>
                                                             <ul>
-                                                                <li>Máy Chăm Sóc Da</li>
+                                                                <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=10">Máy Chăm Sóc Răng</a></li>
                                                                 <li>Máy rửa mặt</li>
                                                             </ul>
                                                         </div>

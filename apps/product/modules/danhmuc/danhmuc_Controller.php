@@ -19,7 +19,7 @@ class danhmuc_Controller extends Controller {
         $viewData['type'] = get_request_var('t'); //url $_GET['t'] 
         $gender = get_request_var('g');
         $viewData['gender'] = $gender;
-        $viewData['products'] = $this->model->getDanhSachSanPhamTheoDanhMuc($gender);
+        $viewData['products'] = $this->model->getDanhSachSanPhamTheoTTCTDM($gender);
         $this->getView()->render('danhmuc', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
     }
 }
