@@ -137,7 +137,7 @@
                             <a href=""><svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M11.5322 4.01538C11.6056 4.21005 11.7919 4.33889 12 4.33889C12.2081 4.33889 12.3944 4.21005 12.4678 4.01538C13.2238 2.01148 15.5765 0.5 18 0.5C21.0434 0.5 23.5 2.88657 23.5 5.75833C23.5 8.09972 22.4687 10.4862 20.4637 12.9268C18.5068 15.3087 15.6467 17.7114 12 20.1309C8.35334 17.7114 5.49323 15.3087 3.53634 12.9268C1.53131 10.4862 0.5 8.09972 0.5 5.75833C0.5 2.86737 2.93657 0.5 6 0.5C8.42355 0.5 10.7762 2.01148 11.5322 4.01538Z" stroke="#222222" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
 							</svg></a>
-                            <a href=""><svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="product/giohang/"><svg width="17" height="23" viewBox="0 0 17 23" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16.4591 6.78643C16.4536 6.78643 16.4536 6.78643 16.4481 6.78643H13.2468V4.44242C13.2468 1.99161 11.1714 0 8.63799 0C6.10455 0 4.02922 1.99161 4.02922 4.44242V6.78643H0.551948C0.253896 6.78109 0.00551948 7.01069 0 7.29902C0 7.30436 0 7.30436 0 7.30969V19.772C0 21.2456 1.23636 22.4363 2.75974 22.4363H14.2403C15.7636 22.4363 17 21.2456 17 19.772V7.30969C17 7.02136 16.7571 6.78643 16.4591 6.78643ZM5.13312 4.44242C5.13312 2.57895 6.71169 1.06789 8.63799 1.06789C10.5643 1.06789 12.1429 2.57895 12.1429 4.44242V6.78643H5.13312V4.44242ZM15.8961 19.7666C15.8961 20.6476 15.1565 21.3631 14.2403 21.3631H2.75974C1.84903 21.3631 1.1039 20.653 1.1039 19.772V7.85432H4.02922V10.9565C4.02922 11.2502 4.2776 11.4905 4.58117 11.4905C4.88474 11.4905 5.13312 11.2502 5.13312 10.9565V7.85432H12.1429V10.9565C12.1429 11.2502 12.3912 11.4905 12.6948 11.4905C12.9984 11.4905 13.2468 11.2502 13.2468 10.9565V7.85432H15.8961V19.7666Z" fill="#212121"></path>
 							</svg></a>
                         </div>
@@ -260,18 +260,18 @@
                                                         <div>
                                                             <ul>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=8">Khẩu Trang/ Rửa Tay</a></li>
-                                                                <li>Sơn Móng Tay</li>
+                                                                <!-- <li>Sơn Móng Tay</li> -->
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="menu-list-tittle"><span><b>THIẾT BỊ LÀM ĐẸP</b></span>
+                                                    <!-- <div class="menu-list-tittle"><span><b>THIẾT BỊ LÀM ĐẸP</b></span>
                                                         <div>
                                                             <ul>
                                                                 <li>Máy Chăm Sóc Da</li>
                                                                 <li>Máy rửa mặt</li>
                                                             </ul>
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -292,10 +292,10 @@
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Che Khuyết Điểm</a></li>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Bb Cream/ Kem Nền</a></li>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=7">Phấn Nước</a></li>
-                                                                <li>Má Hồng</li>
+                                                                <!-- <li>Má Hồng</li>
                                                                 <li>Tạo Khối</li>
                                                                 <li>Phần Nền/Phấn Phủ</li>
-                                                                <li>Xịt Cố Định MakeUp</li>
+                                                                <li>Xịt Cố Định MakeUp</li> -->
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -331,7 +331,7 @@
                                                         <div>
                                                             <ul>
                                                                 <li><a href="<?php echo SITE_ROOT_IMG;?>product/danhmuc?t=t_skin&g=10">Máy Chăm Sóc Răng</a></li>
-                                                                <li>Máy rửa mặt</li>
+                                                                <!-- <li>Máy rửa mặt</li> -->
                                                             </ul>
                                                         </div>
                                                     </div>

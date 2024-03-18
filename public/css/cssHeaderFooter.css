@@ -207,6 +207,13 @@
     height: 10%;
     margin-top: 5px;
 }
+.menu-list-tittle div ul li a{
+    color: black;
+}
+.menu-list-tittle div ul li a:hover{
+    color: #b50014;
+    ;
+}
     /*hover menu*/
 .info_menu li:hover .menu_box{
     display: block;
