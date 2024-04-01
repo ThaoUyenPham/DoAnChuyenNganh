@@ -75,17 +75,8 @@
                                     <div class="coupon_inner">
                                         <div class="cart_subtotal">
                                             <p>Tổng mặt hàng</p>
-                                            <p class="cart_amount">12</p>
+                                            <p class="cart_amount"></p>
                                         </div>
-                                        <!-- <div class="cart_subtotal ">
-                                            <p>Giá vận chuyển</p>
-                                            <p class="cart_amount"><span>Flat Rate:</span> £255.00</p>
-                                        </div>
-                                        <a href="#">Calculate shipping</a>
-                                        <div class="cart_subtotal">
-                                            <p>Total</p>
-                                            <p class="cart_amount">£215.00</p>
-                                        </div> -->
                                         <div class="checkout_btn">
                                             <a href="#">ĐẶT HÀNG</a>
                                         </div>

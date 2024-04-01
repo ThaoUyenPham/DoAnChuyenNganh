@@ -5,9 +5,11 @@ if (!defined('SERVER_ROOT')) {
 
 class login_Model extends Model {
 
-    public function get(){
-        $query = "";
+    public function getTaikhoanKH($Email,$Matkhau){
+        $query = "select * from qldoanchuyennganh.khachhang 
+        where Email='".$Email."' and Matkhau='".$Matkhau."";
         return $this->qSelect($query);
+
     }
 
 }

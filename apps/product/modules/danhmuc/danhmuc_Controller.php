@@ -20,7 +20,21 @@ class danhmuc_Controller extends Controller {
         $gender = get_request_var('g');
         $viewData['gender'] = $gender;
         $viewData['products'] = $this->model->getDanhSachSanPhamTheoTTCTDM($gender);
-        $this->getView()->render('danhmuc', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
+        $this->getView()->render('danhmuc', $viewData);
+       
+    }
+    public function getSearch() {
+        if(isset($_GET['tukhoa'])){
+            $tukhoa=$_GET['tukhoa']; 
+            $viewData['gender'] = null;
+            $viewData['products'] = $this->model->getDanhSachSanPhamTheoTenSP($tukhoa);
+            //var_dump($viewData);die();
+            $this->getView()->render('danhmuc', $viewData);           
+        }
+        else{
+            $this->getView()->render('error404'); 
+        }
+      
     }
 }
 ?>

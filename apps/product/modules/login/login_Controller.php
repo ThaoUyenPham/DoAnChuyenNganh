@@ -19,6 +19,22 @@ class login_Controller extends Controller {
         $viewData=[];
         $this->getView()->render('login', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
     }
-    
+    public function checkTK(){
+        //session_start();
+        $Email = get_post_var('Email');
+        $Matkhau = get_post_var('Matkhau');
+        $result = $this->model->getTaikhoanKH($Email,$Matkhau);
+       
+       //$_SESSION['dangnhap']['username']=$username;
+        //echo $_SESSION['dangnhap']['username'];
+             
+        if(!$result){
+            echo 0;
+        }
+        else{
+            echo 1;
+        }
+        //$_SESSION['login']['Email']=$Email;
+    }
 }
 ?>

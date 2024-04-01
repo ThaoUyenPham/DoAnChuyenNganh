@@ -30,94 +30,94 @@
    <div class="mainLayout">
       <div class="main">
             <div class="content_main">
-               <div class="muahang">
+            <div class="muahang">
                   <div class="trongmuahang">
                      <div class="hinhmuahang">
+                    
+                     <?php if(count($products) > 0){ 
+                        foreach($products as $pro){?>
+                         <input type="hidden" id="IdSP" value="<?php echo $IdSP; ?>">
+                        <input type="hidden" id="Tieude" value="<?php echo $pro['Tieude']; ?>"><!--gọi TenSP trong sql ra (TenSP) phải trùng khớp với TenSP trong table sanpham-->
+                        <input type="hidden" id="gia" value="<?php echo $pro['Gia']; ?>">
+                        <input type="hidden" id="KhuyenMai" value="<?php echo $pro['KhuyenMai']; ?>">
+                        <input type="hidden" id="Hinh" value="<?php echo $pro['Hinh']; ?>">
+                        
                         <div class="hinhlon">
-                           <img src="./ảnh/tottenham-23.jpg">
+                           <img id="Hinh" src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>">
                         </div>
-                        <div class="hinhnho">
+                        <!-- <div class="hinhnho">
                            <div class="nho"> <img src="./ảnh/man-city-cam.jpg"></div>
                            <div class="nho"> <img src="./ảnh/mu-trang-22-640x640.jpg"></div>
                            <div class="nho"> <img src="./ảnh/tottenham-23.jpg"></div>
                            <div class="nho"> <img src="./ảnh/liverpool-trang-xanh-jp.jpg"></div>
-                        </div>
+                        </div> -->
+                        <?php }}?>
                      </div>
-                     <form action="" name="muahang" id="muahang" method="post" onsubmit="return kiemtra()">
+                     <form action="" name="muahang" id="muahang" method="post">
+                        <?php if(count($products) > 0){ 
+                           foreach($products as $pro){?>
                         <div class="thanhtoan">  
-                           <h2>Áo bóng đá CLB Tottenham-2023</h2>
-                        <br>
-                        <p style="color: gray;"><b>Giá tốt nhất so với các sản phẩm cùng loại trên TC Shop!</b></p>
-                        <br>
-                        <h4>Giá gốc:<del>150.000đ</del></h4>
-                        <h4 style="font-size: 25px;">Giảm còn:110.000đ</h4>
+                           <h2 id="tenSP"><?php echo $pro['Tieude']?></h2>
                            <br>
+                           <p style="color: gray;"><b>Giá tốt nhất so với các sản phẩm cùng loại trên Shop!</b></p>
                            <br>
-                           <p>Vui lòng chọn size:
-                           <select name="size" id="size" >
-                           <option value="1">S</option>
-                           <option value="1">M</option>
-                           <option value="1">L</option>
-                           <option value="1">XL</option>
-                           <option value="1">XXL</option>
-                           </select>
-                           </p>
-                           <br>
-                           <p>Vận Chuyển: <a>Miễn phí <i class="fa-solid fa-truck"></i></a></p>
-                           <br>
-                           <p>Số lượng: <input type="text" name="sl" id="sl"  placeholder="0" ><a style="font-size: 15px;color: gray;"> 95634 sản phẩm có sẵn</a></p>
-                           <br>
-                           <br>
-                           <p  class = "nhap"style="padding-left: 30px;"><input type="submit" value="Thêm Vào Giỏ Hàng" style="border-color: rgb(69, 69, 227);color: rgb(69, 69, 227);">
-                           &nbsp;&nbsp;&nbsp;
-                           <input type="button" value="Mua Hàng" style=" background-color: rgb(69, 69, 227);
-                           color: white;">
-                           </p>
-                        </div>
-                     </form> 
-                     <div class="mota">
-                           <h3 style="text-align: center;">Mô tả sản phẩm</h3>
-                           <p>ĐẶC TÍNH CỦA BỘ QUẦN ÁO ĐÁ BÓNG NAM – BÓNG ĐÁ NỮ </p>
-                              <p>- Chất vải của bộ quần áo thể thao siêu thoáng, thấm hút mồ hôi, độ bền cao, có khả năng cầm màu, giữ dáng rất tốt</p>      
-                              <p></p> - Sợi vải mảnh siêu nhẹ, chống nhăn, cấu trúc sợi thấm mồ hôi nhanh, làm lạnh và thoát nhiệt qua bề mặt hiệu quả giúp cơ thể luôn thoáng mát, khử mùi khi vận động
-                              <p></p> - Công nghệ dệt đặc biệt giúp bộ quần áo thể thao ngăn chặn tia UV, bảo vệ da trước tia cực tím                   
-                              <br><br>
-                           <p></p>  ƯU ĐIỂM CỦA BỘ QUẦN ÁO ĐÁ BÓNG NAM – BÓNG ĐÁ NỮ 
-                              <p></p> - Thiết kế độc đáo, kiểu dáng thời thượng 
-                           <p></p>  - Màu sắc đa dạng từ đơn giản đến nổi bật, cập nhật mẫu thường xuyên                    
-                              <p></p> - Size áo theo tiêu chuẩn Việt Nam, vừa vặn, thoải mái
-                              <p></p> - Công nghệ in chuyển nhiệt cao cấp sắc nét, không bong, không phai
-                              <p></p> - Bộ quần áo thể thaoThích hợp trong mọi hoạt động thể thao, đặc biệt là tập luyện và thi đấu bóng đá, đá banh, đá bóng
-                              <p></p> HD GIẶT ỦI BỘ QUẦN ÁO ĐÁ BÓNG NAM – BÓNG ĐÁ NỮ
-                           <p></p>  Giặt quần áo mới trước khi mặc, không ngâm sản phẩm quá lâu trong dung dịch có độ tẩy rửa cao, không cho xà phòng, hóa chất trực tiếp lên sản phẩm, không phơi dưới nắng to, ủi đồ ở nhiệt độ trung bình
-                              <br><br>
-                           <p></p>  CAM KẾT  
-                           <p></p>  - Màu sắc và họa tiết sản phẩm chân thật                   
-                           <p></p>  - Đường may tỉ mỉ, chắc chắn, bền đẹp                   
-                              <p></p> - Chất liệu vải cao cấp, thân thiện với người dùng                   
-                           <p></p>  Logo in sắc nét                 
-                              <br><br> 
-                           <p></p>  BẢNG SIZE               
-                           <p></p>  Size S: cao 1m50-1m59 nặng 40-50kg                  
-                           <p></p>  Size M: cao 1m60-1m64 nặng 50-57kg               
-                              <p></p> Size L: cao 1m65-1m72 nặng 58-65kg                   
-                           <p></p>  Size XL: cao 1m73-1m78 nặng 66-73kg                   
-                              <br><br>                   
-                              <p></p> ⛔️  HƯỚNG DẪN ĐẶT ĐỒ IN TÊN SỐ
-                        <p></p>   =>>  Chọn đúng phân loại có ghi + in để được in theo yêu cầu 
-                           <p></p>   *  in sau áo  ( Tên + Số + FC ) , Quần in số theo áo
-                           <p></p>
-                                 * Ghi thông tin in tên số vào phần ghi chú hoặc inbox nội dung cho shop ( inbox shop sẽ xử lý chậm hơn )
-                              <p></p>
-                           * Mặc đinh font chữ và IN HOA quý khách muốn thay đổi vui lòng ghi rõ hoặc inbox shop.
-                              <p></p>
-                              ⛔️Liên hệ shop để đặt Đội nhận nhiều ưu đãi nha
-                           <p></p>
-                              ⛔️ Mọi thắc mắc liên hệ : hotline / zalo : 086.999.8658                   
+                           <h4 id="gia">Giá gốc:<del><?php echo number_format($pro['Gia'],0)?></del></h4>
+                           <h4 style="font-size: 25px;" id="">Giảm còn:<?php echo number_format($pro['KhuyenMai'],0)?></h4>
+                              <br>
+                              <p>Vận Chuyển: <a>Miễn phí <i class="fa-solid fa-truck"></i></a></p>
+                              <br>
+                              <p>Số lượng:</p>
+                              <div class="productInfo_input">
+                                        <div class="productInfo_block">
+                                            <div class="quanity_product" id="buy-amount">
+                                                <input type="number" id="amount" min="1" max="10">
+                                            </div>
+                                        </div>
+                              </div>                              
+                              <a style="font-size: 15px;color: gray;"><?php echo $pro['SL']?> sản phẩm có sẵn</a>
+                              <br>
+                              <br>
+                              <p class = "nhap"style="padding-left: 30px;">
+                              <button id="btn_cart" type="submit" style="border-color: rgb(69, 69, 227);color: rgb(69, 69, 227);">Thêm giỏ hàng</button>
+                              <!-- &nbsp;&nbsp;&nbsp; -->
+                              <button type="button" style=" background-color: rgb(69, 69, 227);
+                              color: white;">Mua hàng</button>
                               </p>
-                     </div> 
+                           <?php }}?>
+                        </div>
+                     </form>  
                   </div>
-               </div>
+                  <div class="mota">
+                           <!-- <h3 style="text-align: center;">Mô tả sản phẩm</h3> -->
+                     <h4>THÔNG TIN SẢN PHẨM</h4><br>
+                     <p>- 100% hàng chính hãng từ thương hiệu THEGIOSKINFOOD.</p>
+                     <br>
+                     <p>- Hình ảnh sản phẩm là ảnh thật do shop tự chụp.</p>
+                     <br>
+                     <p>- Đảm bảo vải chất lượng, được chọn lọc kỹ lưỡng.</p>
+                     <br>
+                     <p>- Sản phẩm được kiểm tra kỹ càng, 
+                     cẩn thận và tư vấn nhiệt tình trước khi gói hàng.</p>
+                     <br>
+                     <p>- Cam kết sản phẩm giống với mô tả.</p>
+                     <br>
+                     <p> - Giao hàng trên toàn quốc</p>
+                     <br>
+                     <h4>CHÍNH SÁCH ĐỔI TRẢ</h4>
+                     <br>
+                     <p>- Miễn phí đổi hàng cho khách hàng trong trường hợp bị lỗi từ nhà sản xuất, 
+                     giao nhầm hàng, bị hư hỏng trong quá trình vận chuyển hàng.</p> 
+                     <br>
+                     <p>- Khi mở sản phẩm anh chị vui lòng quay lại video quá trình mở sản phẩm 
+                        để được đảm bảo 100% đổi lại sản phẩm mới nếu Shop giao bị lỗi.</p>
+                        <br>
+                     <p>- Sản phẩm đổi phải còn nguyên tem mác và chưa qua sử dụng/ giặt.</p>
+                     <br>
+                     <p>- Sản phẩm đổi trong thời gian 7 ngày kể từ ngày nhận hàng.</p>
+                     <br>
+                     <p>Mọi thắc mắc khách hàng vui lòng inbox trực tiếp để được hỗ trợ.</p>
+                  </div>
+               </div>              
             </div>
       </div>
    </div>
@@ -125,3 +125,37 @@
 <?php $this->template->display('footer.php'); ?>
 </body>
 </html>
+<script>
+    $('#btn_cart').click(function(){ //khi nhấn vào giỏ hàng
+        var IdSP = $('#IdSP').val();
+        var Tieude = $('#Tieude').val();
+        var amount = $('#amount').val();
+        var Gia = $('#gia').val();
+        var KhuyenMai = $('#KhuyenMai').val();
+        var Hinh = $('#Hinh').val();
+        // console.log(color);
+        $.ajax('/product/chitietsanpham/saveCartProduct',{   
+            type: 'POST',  // http method
+            data: { 
+                'IdSP': IdSP,
+                'Tieude': Tieude,
+                'amount': amount,
+                'Gia': Gia,
+                'KhuyenMai': KhuyenMai,
+                'Hinh': Hinh,
+                
+            },  // data to submit
+            success: function (data, status, xhr) {
+               // if(data==1)
+               //    alert("Thêm giỏ hàng thành công");
+               // else
+               //    alert("Thêm giỏ hàng không thành công");
+             alert(data);
+            //    console.log(data);
+            //     console.log(status);
+                //alert("Đã thêm");
+            }
+
+        });
+    });
+</script>

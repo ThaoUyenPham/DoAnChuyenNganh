@@ -41,9 +41,10 @@
                 <?php if(count($products) > 0){ 
                 foreach($products as $pro){?>
                     <div class="gia">
-                        <a href=""><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>"></a>
+                        <a href="#"><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" 
+                        onclick="xemChiTiet('<?php echo $pro['IdSP']?>')"></a>
                         <p><?php echo $pro['Tieude']?></p>
-                        <p><a><?php echo $pro['Gia']?></a></p>                          
+                        <p><a><?php echo number_format($pro['Gia'],0)?></a></p>                          
                     </div>
                 <?php }}?>            
             </div>
@@ -51,17 +52,6 @@
                 <div class="khoangtrang1">
         
                 </div>
-                <ul class="pagination">
-                    <li><a href="?per_page=5&page=1">1</a></li>
-                    <li><a href="?per_page=5&page=2">2</a></li>
-                    <li><a href="?per_page=5&page=3">3</a></li>
-                    <!-- <li><a href="?per_page=4&page=4">4</a></li>
-                    <li><a href="?per_page=4&page=5">5</a></li>
-                    <li><a href="?per_page=4&page=6">6</a></li>
-                    <li><a href="?per_page=4&page=7">7</a></li>
-                    <li><a href="?per_page=4&page=8">8</a></li> -->
-                                
-                </ul>
             <div class="khoangtrangduoi">
                 <marquee behavior="" direction="">
                     <h5> Cảm ơn bạn đã quan tâm đến sản phẩm của Shop! Chúc bạn Thành Công và Mạnh Khỏe! Nếu có
@@ -77,5 +67,20 @@
 </body>
 </html>
 <script>
-   
+    function xemChiTiet(IdSP){
+        // $.ajax({
+        //     type: "POST",
+        //     url: '/product/chitietsanpham',
+        //     dataType:"jsonp",
+        //     data: {
+        //         "id": maSP
+        //     },
+        //     success: function(response){
+                
+        //         $( "#result" ).empty().append( response );
+        //     }
+        // });
+        window.open("<?php echo SITE_ROOT ?>product/chitietsanpham?msp="+IdSP, "_top");
+    }
+
 </script>
