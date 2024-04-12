@@ -5,7 +5,16 @@ if (!defined('SERVER_ROOT')) {
 class giohang_Model extends Model {
 
     public function getDanhSachSanPham(){
-        $query = "";
+        $query = "select Hinh,MaG,Tieude,sl,gia,Makh from qldoanchuyennganh.giohang order by MaG asc";
         return $this->qSelect($query);
+    }
+    public function getxoaSanpham($MaG){
+        $query = "delete from qldoanchuyennganh.giohang where MaG = '".$MaG."'";
+        return $this->qDelete($query);
+    }
+    public function getCapNhatSanpham($MaG,$soluong){
+        $query = "update qldoanchuyennganh set sl=".$sl." where MaG='".$MaG."'";
+        //var_dump($query);
+        return $this->qUpdate($query);
     }
 }

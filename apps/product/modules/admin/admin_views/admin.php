@@ -48,17 +48,6 @@
                         <div class="content">
                             <div class="dashboard-overview">
                                 <h2>Tổng hợp sản phẩm</h2>
-                                <!-- <form style="float:left;margin-right:40px;" action="" method="GET">
-                                    <label for="live">Phân loại:</label>
-                                    <input list="live" name="browser">
-                                    <datalist id="live">
-                                        <option id="opt" value="Son">
-                                        <option id="opt" value="Phấn mắt">
-                                        <option id="opt" value="Kẻ chân mày">
-                                        <option id="opt" value="Nước tẩy trang">
-                                        <option id="opt" value="Dầu gội">
-                                    </datalist><br>
-                                </form> -->
                                 <form action="/product/admin/getSearchKey?" method="GET">
                                     <label for="live">Tìm kiếm:</label>
                                     <input type="text" name="tukhoa">
@@ -70,11 +59,12 @@
                                 <div class="bangContent">
                                     <table>                                  
                                         <tr>
-                                            <th id="masp">Mã sản phẩm</th>
+                                            <th id="idsp">Mã sản phẩm</th>
                                             <th>Hình ảnh</th>
                                             <th>Tên sản phẩm</th>
-                                            <th>Số lượng</th>
-                                            <th id="tensp">Giá</th>
+                                            <th id="sl">Số lượng</th>
+                                            <th id="gia">Giá</th>
+                                            <th id="gia">Giá Khuyến Mãi</th>
                                             <th>Hành động</th>                      
                                         </tr>  
                                       
@@ -88,7 +78,8 @@
                                             <td><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" alt=""></td>
                                             <td id="tensp"><?php echo $pro['Tieude']?></td>
                                             <td><?php echo $pro['SL']?></td>
-                                            <td><?php echo $pro['Gia']?></td>
+                                            <td><?php echo number_format($pro['Gia'],0)?></td>
+                                            <td><?php echo number_format($pro['KhuyenMai'],0)?></td>
                                             <td><a style="cursor:hand;" onclick="deletePro('<?php echo $pro['IdSP'];?>')">Xóa</a></td>                  
                                         
                                         </tr>   
@@ -159,17 +150,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    <!-- <div class="rowContent">
-                                        <div class="lbltitle">
-                                            <label>Màu</label>
-                                        </div>
-                                        <div class="lblinput">
-                                            <input type="text" id="txtMau" name="" value="">
-                                            <input type="text" id="txtMau" name="" value="">
-                                        </div>
-                                    </div> -->
-
                                     <div class="rowContent">
                                         <div class="lbltitle">
                                             <label>Kho hàng</label>
@@ -184,6 +164,14 @@
                                     <div class="rowContent">
                                         <div class="lbltitle">
                                             <label>Giá sản phẩm</label>
+                                        </div>
+                                        <div class="lblinput">
+                                            <input type="text" id="txtGia" value="">
+                                        </div>
+                                    </div>
+                                    <div class="rowContent">
+                                        <div class="lbltitle">
+                                            <label>Giá khuyến mãi</label>
                                         </div>
                                         <div class="lblinput">
                                             <input type="text" id="txtGia" value="">
@@ -253,19 +241,16 @@
                     'IdCTDM':IdCTDM,
                     'IdTTCTDM':IdTTCTDM,
                     'Gia': Gia,
-                    // 'TenSz1': TenSz1,
-                    // 'TenSz2': TenSz2,
-                    // 'SLT1': SLT1,
-                    // 'SLT2': SLT2
 
                 },  // data to submit
                 success: function (data, status, xhr) {
-                    // console.log(data);
+                     console.log(data);
+                     console.log(status);
                 //    if(data==1){
-                //     alert("Thêm thành công");
+                //     alert("Thêm sản phẩm thành công");
                 //    }
                 //    else{
-                //     alert("Thêm không thành công");
+                //     alert("Thêm sản phẩm không thành công");
                 //    }
                 }
 

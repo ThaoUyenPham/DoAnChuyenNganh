@@ -29,8 +29,9 @@ class admin_Model extends Model {
         return $this->qSelect($query);
     }
     public function getThemSanpham($TenSP,$img,$IdDM,$Gia,$IdCTDM,$IdTTCTDM,$SL){
-        $query = "insert into qldoanchuyennganh.sanpham(Tieude,SL,img,GIA,IdDM,Id_CTDM,Id_TTCTDM) 
+        $query = "insert into qldoanchuyennganh.sanpham(Tieude,SL,Gia,KhuyenMai,Hinh,IdDM,Id_CTDM,Id_TTCTDM) 
         values (N'".$TenSP."',".$SL.",'".$img."',".$Gia.",'".$IdDM."','".$IdCTDM."','".$IdTTCTDM."')";
+        var_dump($query);die();
         return $this->qInsert($query, true);
     }
 }

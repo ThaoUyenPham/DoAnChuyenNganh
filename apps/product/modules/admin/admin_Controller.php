@@ -52,10 +52,7 @@ class admin_Controller extends Controller {
         $IdCTDM= get_post_var('IdCTDM');
         $IdTTCTDM= get_post_var('IdTTCTDM');
         $SL = get_post_var('SL');
-        // $TenSz1 = get_post_var('TenSz1');
-        // $TenSz2 = get_post_var('TenSz2');
-        // $SLT1 = get_post_var('SLT1');
-        // $SLT2 = get_post_var('SLT2');
+
         $split = html_entity_decode(str_replace('C:fakepath', '', $Hinh));
         $img="tttl/img/" .$split;
         $IdSP = $this->model->getThemSanpham($TenSP,$img,$IdDM,$Gia,$IdCTDM,$IdTTCTDM,$SL);
@@ -76,7 +73,7 @@ class admin_Controller extends Controller {
             // $kq8 = $this->model->getQLTKSanpham1($kq2,$kq3,$maSP,$SLT1);
             // $kq9 = $this->model->getQLTKSanpham2($kq2,$kq4,$maSP,$SLT2);
         
-        if($maSP>0){
+        if($IdSP>0){
             echo 1;
         }
         else{

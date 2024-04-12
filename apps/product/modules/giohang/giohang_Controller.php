@@ -16,8 +16,31 @@ class giohang_Controller extends Controller {
     }
 
     public function index() {
-        $viewData=[];
+        $viewData['products'] = $this->model->getDanhSachSanPham();
         $this->getView()->render('giohang', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
+    }
+    public function XoaGiohang() {
+        $MaG = get_post_var('MaG');
+        $result= $this->model->getxoaSanpham($MaG);   
+        if(!$result)
+            echo 0;
+        else
+            echo 1;           
+    }
+    public function CapNhatGiohang() {
+        $MaG = get_post_var('MaG');
+        $sl = get_post_var('sl');
+        if($sl >0){
+            echo 1;
+        }
+        else{
+            echo 0;
+        }
+        return $this->model->getCapNhatSanpham($MaG,$sl);      
+    }
+    public function Order(){
+        session_start();
+        
     }
 }
 ?>
