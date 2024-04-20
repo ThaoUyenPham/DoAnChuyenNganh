@@ -182,6 +182,7 @@ $('#btn_update').click(function(){
 
         });
 });
+// click dat hang
 $('#Order').click(function(){
         //var makh = $('#makh').val();
        
