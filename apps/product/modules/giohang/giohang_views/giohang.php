@@ -50,23 +50,22 @@
                                     <tbody>
                                     <?php if(count($products)>0){ 
                                                 // error_reporting (E_ALL ^ E_NOTICE);
-                                                            $tong=0; 
-                                                            foreach($products as $pro){
-                                                            
-                                                            // var_dump($pro['MaG']);die();
-                                                            $tt=$pro['gia']*$pro['sl'];
-                                                            $tong+=$tt;                
-                                            ?>
-                                            <tr>
+                                        $tong=0; 
+                                        foreach($products as $pro){
+                                            // var_dump($pro['IdG']);die();
+                                            $tt=$pro['Gia']*$pro['SL'];
+                                            $tong+=$tt;                
+                                    ?>
+                                        <tr>
                                             
-                                                <!-- <input type="hidden" id="soluong" value="<?php echo $pro['sl']; ?>"> -->
-                                                <input type="hidden" id="MaG" value="<?php echo $pro['MaG']; ?>">
+                                                <!-- <input type="hidden" id="soluong" value="<?php echo $pro['SL']; ?>"> -->
+                                                <input type="hidden" id="IdG" value="<?php echo $pro['IdG']; ?>">
                                             <td class="product_remove"><a id="btn_delete" onclick="deleteSP()" ><i class="fa fa-trash-o" style="cursor:hand;"></i></a</td>
                                             <td class="product_thumb"><a href="#"><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh']?>" alt=""></a></td>
                                             <td class="product_name"><a href="#"><?php echo $pro['Tieude']?></a></td>
-                                            <td class="product-price" id="price<?php echo $pro['MaG']?>" val="<?php echo $pro['gia']?>"><?php echo number_format ($pro['gia'],0)?></td>
-                                            <td class="product_quantity"><input min="0" max="100" id="sl<?php echo $pro['MaG']?>" value="<?php echo $pro['sl']?>" type="number" onChange="changeQuantity(<?php echo $pro['MaG']; ?>)"></td>
-                                            <td class="product_total" id="total<?php echo $pro['MaG']?>" val="<?php echo $pro['gia']*$pro['sl']; ?>"><?php echo number_format($pro['gia']*$pro['sl'],0)?></td>
+                                            <td class="product-price" id="price<?php echo $pro['IdG']?>" val="<?php echo $pro['Gia']?>"><?php echo number_format ($pro['Gia'],0)?></td>
+                                            <td class="product_quantity"><input min="0" max="100" id="SL<?php echo $pro['IdG']?>" value="<?php echo $pro['SL']?>" type="number" onChange="changeQuantity(<?php echo $pro['IdG']; ?>)"></td>
+                                            <td class="product_total" id="total<?php echo $pro['IdG']?>" val="<?php echo $pro['Gia']*$pro['SL']; ?>"><?php echo number_format($pro['Gia']*$pro['SL'],0)?></td>
                                         </tr>
                                         <?php }}?>
                                     </tbody>
@@ -108,16 +107,16 @@
 </html>
 <script type = "text/javascript">
     // tang chinh so luong + chi phi + tong
-    function changeQuantity(MaG){
-        var quantity = $('#sl'+MaG).val();
+    function changeQuantity(IdG){
+        var quantity = $('#SL'+IdG).val();
         console.log('Quantity '+quantity);
 
-        var cost = $('#price'+MaG).text();
+        var cost = $('#price'+IdG).text();
         console.log('befor cost '+cost);
         console.log(cost);
         cost = Number(cost.replace(/,/g, ""));
         console.log('after cost '+cost);
-        $("#price"+MaG).attr('val', cost);
+        $("#price"+IdG).attr('val', cost);
 
         var sum = quantity * cost;
         console.log('sum '+sum);
@@ -125,8 +124,8 @@
         //var total = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
         var total = new Intl.NumberFormat('vi-VN').format(sum);
         console.log('total '+total);
-        $("#total"+MaG).text(total);
-        $("#total"+MaG).attr('val', sum);
+        $("#total"+IdG).text(total);
+        $("#total"+IdG).attr('val', sum);
 
         let elements = document.getElementsByClassName("product_total");
         var sumTotal = 0;
@@ -143,13 +142,13 @@
         $('.cart_amount').attr('val', sumTotal);
     }
     //nút xóa
-    function deleteSP(MaG){
-        var MaG = $('#MaG').val();
-        // $('#MaG').val(MaG);
+    function deleteSP(IdG){
+        var IdG = $('#IdG').val();
+        // $('#IdG').val(IdG);
         $.ajax('/product/giohang/XoaGiohang',{   
             type: 'POST',  // http method
             data: { 
-                'MaG': MaG,                 
+                'IdG': IdG,                 
             },  // data to submit
             success: function (data, status, xhr) {
                 // alert(data);
@@ -161,15 +160,15 @@
         });
     }
 $('#btn_update').click(function(){
-        var sl = $('#sl').val();
-        var MaG = $('#MaG').val();
+        var SL = $('#SL').val();
+        var IdG = $('#IdG').val();
         
         // console.log(color);
         $.ajax('/product/giohang/CapNhatGiohang',{   
             type: 'POST',  // http method
             data: { 
-                'sl':sl,
-                'MaG': MaG,
+                'SL':SL,
+                'IdG': IdG,
             },  // data to submit
             success: function (data, status, xhr) {
                 if(data==1){

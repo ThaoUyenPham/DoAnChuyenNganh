@@ -62,7 +62,6 @@
                            <p style="color: gray;"><b>Giá tốt nhất so với các sản phẩm cùng loại trên Shop!</b></p>
                            <br>
                            <h4 id="gia">Giá gốc:<del><?php echo number_format($pro['Gia'],0)?></del></h4>
-                           <h4 style="font-size: 25px;" id="">Giảm còn:<?php echo number_format($pro['KhuyenMai'],0)?></h4>
                               <br>
                               <p>Vận Chuyển: <a>Miễn phí <i class="fa-solid fa-truck"></i></a></p>
                               <br>
@@ -70,7 +69,7 @@
                               <div class="productInfo_input">
                                         <div class="productInfo_block">
                                             <div class="quanity_product" id="buy-amount">
-                                                <input type="number" id="amount" min="1" max="10">
+                                                <input type="number" id="amount" min="1" max="10" value="1">
                                             </div>
                                         </div>
                               </div>                              
@@ -131,7 +130,6 @@
         var Tieude = $('#Tieude').val();
         var amount = $('#amount').val();
         var Gia = $('#gia').val();
-        var KhuyenMai = $('#KhuyenMai').val();
         var Hinh = $('#Hinh').val();
         // console.log(color);
         $.ajax('/product/chitietsanpham/saveCartProduct',{   
@@ -141,7 +139,6 @@
                 'Tieude': Tieude,
                 'amount': amount,
                 'Gia': Gia,
-                'KhuyenMai': KhuyenMai,
                 'Hinh': Hinh,
                 
             },  // data to submit
@@ -149,10 +146,10 @@
                // if(data==1)
                //    alert("Thêm giỏ hàng thành công");
                // else
-               //    alert("Thêm giỏ hàng không thành công");
-             alert(data);
-            //    console.log(data);
-            //     console.log(status);
+                  alert("Thêm giỏ hàng thành công");
+             //alert(data);
+               // console.log(data);
+               //  console.log(status);
                 //alert("Đã thêm");
             }
 

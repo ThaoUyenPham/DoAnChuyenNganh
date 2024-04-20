@@ -20,7 +20,7 @@ define('ADODB_MESSAGE', 0);
 define('SESSION_PREFIX', 'WebSession');
 //Database
 define('DATABASE_USER', 'root');
-define('DATABASE_PASS', '123456');
+define('DATABASE_PASS', 'Uyen123');
 define('DATABASE_NAME', 'qldoanchuyennganh');
 define('SERVICE_NAME', 'localhost');
 define('DATABASE_TYPE', 'MYSQL'); // MSSQL or MYSQL

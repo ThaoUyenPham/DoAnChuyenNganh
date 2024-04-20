@@ -45,15 +45,11 @@ class chitietsanpham_Controller extends Controller {
         $Tieude = get_post_var('Tieude');
         $amount = get_post_var('amount');
         $Gia = get_post_var('Gia');
-        $KhuyenMai = get_post_var('KhuyenMai');
         $Hinh = get_post_var('Hinh');
 
-        $result = $this->model->getLuusanpham($IdSP,$Tieude,$amount,$Gia,$KhuyenMai,$Hinh); 
-        echo "Thêm hàng thành công";
-        // if($result!=0)
-        //     echo 1;
-        // else
-        //     echo 0;   
+        $result = $this->model->getLuusanpham($IdSP,$Tieude,$amount,$Gia,$Hinh); 
+        // echo "Thêm hàng thành công";
+       
     }
 }
 ?>

@@ -5,7 +5,7 @@ if (!defined('SERVER_ROOT')) {
 class giohang_Model extends Model {
 
     public function getDanhSachSanPham(){
-        $query = "select Hinh,MaG,Tieude,sl,gia,Makh from qldoanchuyennganh.giohang order by MaG asc";
+        $query = "select * from qldoanchuyennganh.giohang order by IdG asc";
         return $this->qSelect($query);
     }
     public function getxoaSanpham($MaG){

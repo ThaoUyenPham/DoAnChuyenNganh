@@ -53,6 +53,7 @@
 	text-transform: uppercase;
 	padding: 10px;
 	text-align: center;
+	width: 400px;
 }
 .table_desc table thead tr th.product_remove, .table_desc table thead tr th.product-price, .table_desc table thead tr th.product_total {
     min-width: 159px;
@@ -73,7 +74,9 @@
 	padding: 10px;
 }
 .table_desc table tbody tr td.product_thumb img {
-	width: inherit;
+	width: 60%;
+	height: 100%;
+
 }
 .table_desc table tbody tr td.product_name a {
 	color: #333;
