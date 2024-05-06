@@ -18,8 +18,7 @@ class Session {
     }
 
     public static function get($key, $def = NULL) {
-        //SESSION_PREFIX nay la tham so key cau hinh, tranh truong hop bi an cap key session hoac nham voi session he thong khac. No cau hinh o file config.php
-        $session = new Container(SESSION_PREFIX); 
+        $session = new Container(SESSION_PREFIX);
         if (is_array($key)) {
             $res = array();
             foreach ($key as $k) {

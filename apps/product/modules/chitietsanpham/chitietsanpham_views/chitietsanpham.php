@@ -36,10 +36,9 @@
                     
                      <?php if(count($products) > 0){ 
                         foreach($products as $pro){?>
-                         <input type="hidden" id="IdSP" value="<?php echo $IdSP; ?>">
+                        <input type="hidden" id="IdSP" value="<?php echo $IdSP; ?>">
                         <input type="hidden" id="Tieude" value="<?php echo $pro['Tieude']; ?>"><!--gọi TenSP trong sql ra (TenSP) phải trùng khớp với TenSP trong table sanpham-->
-                        <input type="hidden" id="gia" value="<?php echo $pro['Gia']; ?>">
-                        <input type="hidden" id="KhuyenMai" value="<?php echo $pro['KhuyenMai']; ?>">
+                        <input type="hidden" id="gia" val="<?php echo ($pro['Gia'])?>" value="<?php echo number_format($pro['Gia'],0)?>">
                         <input type="hidden" id="Hinh" value="<?php echo $pro['Hinh']; ?>">
                         
                         <div class="hinhlon">
@@ -61,7 +60,7 @@
                            <br>
                            <p style="color: gray;"><b>Giá tốt nhất so với các sản phẩm cùng loại trên Shop!</b></p>
                            <br>
-                           <h4 id="gia">Giá gốc:<del><?php echo number_format($pro['Gia'],0)?></del></h4>
+                           <h4>Giá gốc:<del><?php echo number_format($pro['Gia'],0).'đ'?></del></h4>
                               <br>
                               <p>Vận Chuyển: <a>Miễn phí <i class="fa-solid fa-truck"></i></a></p>
                               <br>
@@ -73,7 +72,7 @@
                                             </div>
                                         </div>
                               </div>                              
-                              <a style="font-size: 15px;color: gray;"><?php echo $pro['SL']?> sản phẩm có sẵn</a>
+                              <a style="font-size: 15px;color: gray;">Số lượng sản phẩm có sẵn: <?php echo $pro['SL']?> </a>
                               <br>
                               <br>
                               <p class = "nhap"style="padding-left: 30px;">
@@ -130,6 +129,7 @@
         var Tieude = $('#Tieude').val();
         var amount = $('#amount').val();
         var Gia = $('#gia').val();
+        Gia = Number(Gia.replace(/,/g, ""));
         var Hinh = $('#Hinh').val();
         // console.log(color);
         $.ajax('/product/chitietsanpham/saveCartProduct',{   
@@ -144,13 +144,10 @@
             },  // data to submit
             success: function (data, status, xhr) {
                // if(data==1)
-               //    alert("Thêm giỏ hàng thành công");
-               // else
                   alert("Thêm giỏ hàng thành công");
-             //alert(data);
-               // console.log(data);
-               //  console.log(status);
-                //alert("Đã thêm");
+               // else
+               //    alert("Thêm giỏ hàng không thành công");
+            //  alert(data);
             }
 
         });

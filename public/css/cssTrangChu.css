@@ -37,7 +37,8 @@
 }
 /*background*/
 .SwiperSilder{
-    height: auto;
+    height: 100%;
+    margin-top: 180px;
 }
 .sildes{
     height: 100%;

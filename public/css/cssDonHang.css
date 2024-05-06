@@ -1,0 +1,74 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: black;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+.mainLayout{
+    padding-top: 180px;
+    width: 100%;
+    height: auto;
+    /* height: 200em; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content_main{
+    width: 100%;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+.row{
+    height: auto;
+    padding-left: 300;
+    padding-right: 300;
+}
+
+  .shopping_cart_area {
+	padding-top: 35px;
+	padding: 35px 20px 0;
+}
+/**/
+
+.table-desc{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(130, 129, 129);
+    padding: 20px;
+}
+.orderContainer{
+    display: block;
+}
+.imgOrders{
+    background-color: antiquewhite;
+    height: 8em;
+}
+.priceOrders{
+    background-color: springgreen;
+}
+.cart_page table tr img{
+    float: left;
+}
+.cart_page table tr td{
+    padding: 10px;
+    height: 90px;
+}
+.cart_page table tr td img{
+    width: 20%;
+    height: 100%;
+}

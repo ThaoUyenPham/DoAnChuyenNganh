@@ -38,7 +38,8 @@
                             <ul class="sidebar-menu">
                                 <li><a class="tablinks" onclick="OpenTab(event, 'XemSanpham')"><i class="fa fa-home"></i> Quản Lý Sản Phẩm</a></li>
                                 <li><a class="tablinks" onclick="OpenTab(event, 'QuanlySanpham')"><i class="fa fa-pencil"></i> Thêm sản phẩm</a></li>
-                                <li><a href="#"><i class="fa fa-cog"></i> Cài đặt</a></li>
+                                <li><a class="tablinks" onclick="OpenTab(event, 'QuanlyDonhang')"><i class="fa fa-pencil"></i>Quản lý đơn hàng</a></li>
+                                
                             </ul>
                             <div class="sidebar-footer" style="color: #333;">
                                 <a href="/apps/home/modules/index/index_views/index.php" style="color: cornsilk; text-decoration:none"><i class="fa fa-sign-out"></i> Logout</a>
@@ -75,12 +76,17 @@
                                         
                                             <td><?php echo $pro['IdSP']?></td>
                                             <!-- <td><?php echo $pro['MADM']?></td> -->
-                                            <td><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" alt=""></td>
+                                            <td><a href="#">
+                                                <img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" alt="">
+                                            </a></td>
                                             <td id="tensp"><?php echo $pro['Tieude']?></td>
                                             <td><?php echo $pro['SL']?></td>
                                             <td><?php echo number_format($pro['Gia'],0)?></td>
                                             <td><?php echo number_format($pro['KhuyenMai'],0)?></td>
-                                            <td><a style="cursor:hand;" onclick="deletePro('<?php echo $pro['IdSP'];?>')">Xóa</a></td>                  
+                                            <td>
+                                                <a style="cursor:hand;" onclick="deletePro('<?php echo $pro['IdSP'];?>')">Xóa</a>
+                                                <a href="#" onclick="xemChiTiet('<?php echo $pro['IdSP']?>')">Cập nhật</a>
+                                            </td>                  
                                         
                                         </tr>   
                                         <?php }}?>   
@@ -180,6 +186,30 @@
                                     <button name="AddProduct" id="AddProduct" onclick="AddProduct()">Thêm sản phẩm</button>
                                 </div>
                             </div>
+                            <div id="QuanlyDonhang" class="TabContentQL">
+                            <div class="bangContentt">
+                            <table>                                  
+                                <tr>
+                                    <th id="donhang">Người nhận</th>
+                                    <th>Ngày đặt hàng</th>
+                                    <th>Tổng cộng</th>
+                                    <th>Hành động</th>                  
+                                </tr>  
+                                    <?php if(count($order)>0){ 
+                                        foreach($order as $orders){            
+                                    ?>
+                                    <input type="hidden" id="MaKH" value="<?php echo $orders['IdKH']; ?>">
+                                    <tr>
+                                        <!-- <td><?php echo $orders['IdKH']?></td> -->
+                                        <td class="order"><?php echo $orders['TenKH']?></td>
+                                        <td><?php echo $orders['Ngaydat']?></td>
+                                        <td><?php echo number_format($orders['TongTien'],0)?></td>
+                                        <td><a href="#" onclick="xemDonHang('<?php echo $orders['IdKH']?>')">Xem chi tiết</a></td>             
+                                    </tr>   
+                                    <?php }}?>   
+                                </table>
+                            </div>
+                        </div>
                         </div>
                     </div>                
             </div>
@@ -215,6 +245,31 @@
         document.getElementById(productName).style.display = "block";
         evt.currentTarget.className += " active";
         }
+    function deletePro(IdSP){
+        //var maG = $('#MaG').val();
+        //$('#MaSP').val(MaSP);
+            $.ajax('/product/admin/XoaSanpham',{   
+                type: 'POST',  // http method
+                data: { 
+                    'IdSP': IdSP,                 
+                },  // data to submit
+                success: function (data, status, xhr) {
+                    if(data==1){
+                    alert("Đã xóa thành công");
+                    location.reload();
+                   }
+                    else
+                        alert("Xóa không thành công");
+                //alert(data);
+                }
+            });
+    }
+    function xemChiTiet(IdSP){
+        window.open("<?php echo SITE_ROOT ?>product/chinhsuasp?msp="+IdSP, "_top");
+    }
+    function xemDonHang(IdKH){
+        window.open("<?php echo SITE_ROOT ?>product/donhang?makh="+IdKH, "_top");
+    }
     function AddProduct(TenSP,Hinh,IdDM,Gia){
         var TenSP = $('#txtname').val();
         var IdDM = $('#IdDM').val();
@@ -222,15 +277,7 @@
         var IdCTDM = $('#IdCTDM').val();
         var IdTTCTDM = $('#IdTTCTDM').val();
         var SL = $('#txtSL').val();
-        // var TenSz1 = $('#txtSz1').val();
-        // var TenSz2 = $('#txtSz2').val();
-
-
         var Gia = $('#txtGia').val();
-        // var SLT1 = $('#txtSL1').val();
-        // var SLT2 = $('#txtSL2').val();
-
-       // $('#MaSP').val(MaSP);
             $.ajax('/product/admin/ThemSanpham',{   
                 type: 'POST',  // http method
                 data: { 
@@ -244,10 +291,10 @@
 
                 },  // data to submit
                 success: function (data, status, xhr) {
-                     console.log(data);
-                     console.log(status);
+                    //  console.log(data);
+                    //  console.log(status);
                 //    if(data==1){
-                //     alert("Thêm sản phẩm thành công");
+                    alert("Thêm sản phẩm thành công");
                 //    }
                 //    else{
                 //     alert("Thêm sản phẩm không thành công");

@@ -48,7 +48,7 @@ class chitietsanpham_Controller extends Controller {
         $Hinh = get_post_var('Hinh');
 
         $result = $this->model->getLuusanpham($IdSP,$Tieude,$amount,$Gia,$Hinh); 
-        // echo "Thêm hàng thành công";
+        
        
     }
 }

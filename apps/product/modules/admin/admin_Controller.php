@@ -23,11 +23,13 @@ class admin_Controller extends Controller {
         $viewData['danhmuc'] =  $this->model->getDanhMuc();  
         $viewData['ctdm'] =  $this->model->getCTDM(); 
         $viewData['ttctdm'] =  $this->model->getTTCTDM(); 
+        $viewData['order']=$this->model->getDonHang();
         if($item_per_page==0){
             echo "Khong co san pham";
         }
         else{
             $viewData['products'] =  $this->model->getXemSanPham($item_per_page,$offet);
+
         } 
         
         $this->getView()->render('admin', $viewData);     
@@ -57,31 +59,21 @@ class admin_Controller extends Controller {
         $img="tttl/img/" .$split;
         $IdSP = $this->model->getThemSanpham($TenSP,$img,$IdDM,$Gia,$IdCTDM,$IdTTCTDM,$SL);
         
-        
-        // nu $maSP < 1 -> thi loi khong them moi duoc
-            // viet <code> phai them rang buoc du lieu lai di
-            // $kq2 = $this->model->getMauSanpham($TenMau);
-            // $kq5 = $this->model->getQHMauSanpham($maSP,$kq2);
-
-            // $kq3 = $this->model->getSizeSanpham1($TenSz1);
-            // $kq6 = $this->model->getQHSizeSanpham1($maSP,$kq3);
-
-
-            // $kq4 = $this->model->getSizeSanpham2($TenSz2); 
-            // $kq7 = $this->model->getQHSizeSanpham2($maSP,$kq4);
-
-            // $kq8 = $this->model->getQLTKSanpham1($kq2,$kq3,$maSP,$SLT1);
-            // $kq9 = $this->model->getQLTKSanpham2($kq2,$kq4,$maSP,$SLT2);
-        
         if($IdSP>0){
             echo 1;
         }
         else{
             echo 0;
         }
-            
-        
-        
     }   
+    public function XoaSanpham() {
+        $IdSP = get_post_var('IdSP');
+        $result= $this->model->getxoaSanpham($IdSP);
+        if(!$result)
+            echo 0;
+        else
+            echo 1;
+            
+    }
 }
 ?>

@@ -8,13 +8,14 @@ class giohang_Model extends Model {
         $query = "select * from qldoanchuyennganh.giohang order by IdG asc";
         return $this->qSelect($query);
     }
-    public function getxoaSanpham($MaG){
-        $query = "delete from qldoanchuyennganh.giohang where MaG = '".$MaG."'";
+    public function getxoaSanpham($IdG){
+        $query = "delete from qldoanchuyennganh.giohang where IdG = '".$IdG."'";
+        //var_dump($query);die();
         return $this->qDelete($query);
     }
-    public function getCapNhatSanpham($MaG,$soluong){
-        $query = "update qldoanchuyennganh set sl=".$sl." where MaG='".$MaG."'";
-        //var_dump($query);
+    public function getCapNhatSanpham($IdG,$soluong){
+        $query = "update qldoanchuyennganh.giohang set SL=".$soluong." where IdG='".$IdG."'";
+        //var_dump($query);die();
         return $this->qUpdate($query);
     }
 }
