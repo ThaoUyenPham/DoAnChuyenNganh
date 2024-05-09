@@ -107,7 +107,7 @@ $('#register').click(function(){ //khi nhấn vào giỏ hàng
                 // window.open("<?php echo SITE_ROOT ?>product/dangnhap","_self");
                 if(data==1){
                     window.open("<?php echo SITE_ROOT ?>product/dangnhap","_self");
-                    alert("Xin chào '"+username+"' Bạn đăng ký thành công");
+                    alert("Xin chào '"+TenKH+"' Bạn đăng ký thành công");
                 }
                 else{
                     alert("Tài khoản của bạn đã được đăng ký");
