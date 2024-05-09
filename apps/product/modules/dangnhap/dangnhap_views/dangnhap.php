@@ -43,7 +43,7 @@
 
                     <button id="login" name="dangnhap">Đăng nhập</button><br>
                     <h5>Quên mật khẩu?</h5>
-                    <span>Bạn chưa có tài khoản ? <a href ="<?php echo SITE_ROOT?>product/dangky">Đăng ký Tại đây</a></span>
+                    <span>Bạn chưa có tài khoản ? <a href ="<?php echo SITE_ROOT?>product/signup">Đăng ký Tại đây</a></span>
                 </from>
             </div>
         </div>

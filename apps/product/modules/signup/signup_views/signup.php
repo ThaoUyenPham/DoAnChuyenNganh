@@ -31,28 +31,28 @@
     <div class="mainLayout">
         <div class="main">
             <div class="content_main">
-                <form class="form_main" action="" method="POST">
+                <form class="form_main">
                     <p class="heading">Đăng Ký</p>
                     <div class="inputContainer">
-                        <input placeholder="Điền tên khách hàng" id="inputTenkh" class="input" type="text" value="Mai">
+                        <input placeholder="Điền tên khách hàng" id="inputTenkh" class="input" type="text" value="uyen">
                     </div>
                     <div class="inputContainer">
-                        <input placeholder="Điền email" id="inputUser" class="input" type="text" value="mai12@gmail.com">
+                        <input placeholder="Điền email" id="inputUser" class="input" type="text" value="uyen12@gmail.com">
                     </div>
                     <div class="inputContainer">
-                        <input placeholder="Điền số điện thoại" id="inputPhone" class="input" type="text" value="0123456781">
+                        <input placeholder="Điền số điện thoại" id="inputPhone" class="input" type="text" value="012345689">
                     </div>
                     <div class="inputContainer">
-                        <input placeholder="Điền địa chỉ" id="inputAddress" class="input" type="text" value="Bến tre">
+                        <input placeholder="Điền địa chỉ" id="inputAddress" class="input" type="text" value="Mỹ Tho">
                     </div>                  
                     <div class="inputContainer">
-                        <input placeholder="Điền mật khẩu" id="inputPassword" class="input" type="Password" value="Maiii@!23">
+                        <input placeholder="Điền mật khẩu" id="inputPassword" class="input" type="Password" value="Uyen@123">
                 </div>
                             
                 <a href="/product/forget">Quên mật khẩu?</a>           
                 <button class="button" id="register" style="color:white;">Đăng Ký</button>
                     <div class="signupContainer">
-                        <a href="<?php echo SITE_ROOT?>product/login">Đăng Nhập</a>
+                        <a href="<?php echo SITE_ROOT?>product/dangnhap">Đăng Nhập</a>
                     </div>
                 </form>
             </div>
@@ -64,27 +64,27 @@
 </html>
 <script> 
 $('#register').click(function(){ //khi nhấn vào giỏ hàng
-        var tenkh=$('#inputTenkh').val();
-        var username = $('#inputUser').val();
-        var password = $('#inputPassword').val();
-        var phone = $('#inputPhone').val();
-        var address = $('#inputAddress').val();
+        var TenKH=$('#inputTenkh').val();
+        var Email = $('#inputUser').val();
+        var Matkhau = $('#inputPassword').val();
+        var Sdt = $('#inputPhone').val();
+        var Diachi = $('#inputAddress').val();
         var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
         var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
        
-        if (!passwordPattern.test(password)) {
+        if (!passwordPattern.test(Matkhau)) {
             alert("Mật khẩu phải có chữ hoa, chữ thường, số, và kí tự đặc biệt.");
             return false;
         }
-        else if (!filter.test(username)) {
-            alert("Username phải đủ tên,@,gmail.com");
+        else if (!filter.test(Email)) {
+            alert("Email phải đủ tên,@,gmail.com");
             return false;
         }
-        else if (phone.length !== 10) {
+        else if (Sdt.length != 10) {
             alert("Số điện thoại phải có đúng 10 số.");
             return false;
         }
-        else if(!username || !phone || !address || !password){
+        else if(!Email || !Sdt || !Diachi || !Matkhau||!TenKH){
             alert("Vui lòng nhập đủ thông tin");  
         }
         
@@ -92,23 +92,26 @@ $('#register').click(function(){ //khi nhấn vào giỏ hàng
             $.ajax('/product/signup/checkTK',{   
             type: 'POST',  // http method
             data: { 
-                'username': username,
-                'phone': phone,
+                'TenKH':TenKH,
+                'Email': Email,
+                'Sdt': Sdt,
+                'Diachi': Diachi,
+                'Matkhau': Matkhau,
                 
             },  // data to submit
             
             success: function (data, status, xhr) {
-                console.log(data);
-                console.log(status);
+                //alert(data);
+                //console.log(status);
                 // alert("Đã tạo tài khoản thành công,Hãy chọn đăng nhập");
                 // window.open("<?php echo SITE_ROOT ?>product/dangnhap","_self");
-                // if(data==1){
-                //     //window.open("<?php echo SITE_ROOT ?>product/dathang","_self");
-                //     alert("Xin chào '"+username+"' Bạn đăng ký thành công");
-                // }
-                // else{
-                //     alert("Tài khoản của bạn đã được đăng ký");
-                //  }
+                if(data==1){
+                    window.open("<?php echo SITE_ROOT ?>product/dangnhap","_self");
+                    alert("Xin chào '"+username+"' Bạn đăng ký thành công");
+                }
+                else{
+                    alert("Tài khoản của bạn đã được đăng ký");
+                 }
 
             }
         });

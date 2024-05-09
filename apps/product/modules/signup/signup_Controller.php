@@ -22,17 +22,17 @@ class signup_Controller extends Controller {
     public function checkTK(){
         //session_start();
         $Email = get_post_var('Email');
+        $TenKH = get_post_var('TenKH');
+        $Diachi = get_post_var('Diachi');
+        $Matkhau = get_post_var('Matkhau');
         $Sdt = get_post_var('Sdt');
-        $result = $this->model->getTaikhoanKH($Email,$Sdt);
-       
-       //$_SESSION['dangnhap']['username']=$username;
-        //echo $_SESSION['dangnhap']['username'];
-             
-        if(!$result){
+        $result = $this->model->getTaikhoanKH($TenKH,$Email,$Sdt,$Diachi,$Matkhau);
+        if($result==null){
             echo 0;
         }
         else{
             echo 1;
+            $kq1 = $this->model-> KTTK($Email,$Matkhau);
         }
         //$_SESSION['login']['Email']=$Email;
     }
