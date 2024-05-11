@@ -44,7 +44,7 @@
                         <a href="#"><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" 
                         onclick="xemChiTiet('<?php echo $pro['IdSP']?>')"></a>
                         <p><?php echo $pro['Tieude']?></p>
-                        <p><a><?php echo number_format($pro['Gia'],0)?></a></p>                          
+                        <p><a><?php echo number_format($pro['Gia'],0).' '.'đ'?></a></p>                          
                     </div>
                 <?php }}?>            
             </div>

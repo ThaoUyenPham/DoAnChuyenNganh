@@ -54,12 +54,12 @@ class admin_Controller extends Controller {
         $IdCTDM= get_post_var('IdCTDM');
         $IdTTCTDM= get_post_var('IdTTCTDM');
         $SL = get_post_var('SL');
-
+        //$date = date('Y-m-d H:i:s');
         $split = html_entity_decode(str_replace('C:fakepath', '', $Hinh));
         $img="tttl/img/" .$split;
-        $IdSP = $this->model->getThemSanpham($TenSP,$img,$IdDM,$Gia,$IdCTDM,$IdTTCTDM,$SL);
+        $IdSP = $this->model->getThemSanpham($TenSP,$SL,$Gia,$img,$IdDM,$IdCTDM,$IdTTCTDM);
         
-        if($IdSP>0){
+        if($IdSP!=null){
             echo 1;
         }
         else{

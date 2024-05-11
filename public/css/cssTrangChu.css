@@ -112,7 +112,7 @@
     display: contents;
 }
 .product_item{
-    width: 100%;
+    width: 97%;
     height: 100%;
     float: left;
     text-align: center;
@@ -165,9 +165,9 @@
     background-color: transparent !important;
 }
 .product_col_brand{
-    width: 100%;
+    width: 97%;
     margin: 5px;
-    height: 100%;
+    height: auto;
     border: 1px solid rgb(215, 212, 212);
 }
 .product_item_brand{
@@ -206,11 +206,11 @@
     border: 1px solid transparent;
     padding: 5px;
     font-size: 11px;
-    color:#ffffff
+    color:#ffffff;
 }
 .product_front_brand{
     text-wrap: wrap;
-    height: 50%;
+    /* height: 50%; */
 }
 .product_front{
     height: 50%;

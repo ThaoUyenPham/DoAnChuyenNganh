@@ -4,7 +4,7 @@ if (!defined('SERVER_ROOT')) {
 }
 class dathang_Model extends Model {
     public function getKhachhang(){    
-            $query = "select * from qldoanchuyennganh.khachhang where Email= '".$_SESSION['dangnhap']['Email']."'";     
+            $query = "select * from qldoanchuyennganh.khachhang where Email= '".$_SESSION['dangnhap']['Email']."' group by Email";     
             return $this->qSelect($query);
     }
     public function getGioHang(){    

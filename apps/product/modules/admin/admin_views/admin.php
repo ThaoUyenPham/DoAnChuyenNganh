@@ -41,9 +41,9 @@
                                 <li><a class="tablinks" onclick="OpenTab(event, 'QuanlyDonhang')"><i class="fa fa-pencil"></i>Quản lý đơn hàng</a></li>
                                 
                             </ul>
-                            <div class="sidebar-footer" style="color: #333;">
+                            <!-- <div class="sidebar-footer" style="color: #333;">
                                 <a href="/apps/home/modules/index/index_views/index.php" style="color: cornsilk; text-decoration:none"><i class="fa fa-sign-out"></i> Logout</a>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="content">
@@ -56,6 +56,7 @@
                             </div>
 
                             <br>
+                            <!-- Xem sản phẩm -->
                             <div id="XemSanpham" class="TabContentX"> 
                                 <div class="bangContent">
                                     <table>                                  
@@ -63,9 +64,8 @@
                                             <th id="idsp">Mã sản phẩm</th>
                                             <th>Hình ảnh</th>
                                             <th>Tên sản phẩm</th>
-                                            <th id="sl">Số lượng</th>
+                                            <th id="sl">Số lượng tồn</th>
                                             <th id="gia">Giá</th>
-                                            <th id="gia">Giá Khuyến Mãi</th>
                                             <th>Hành động</th>                      
                                         </tr>  
                                       
@@ -82,7 +82,7 @@
                                             <td id="tensp"><?php echo $pro['Tieude']?></td>
                                             <td><?php echo $pro['SL']?></td>
                                             <td><?php echo number_format($pro['Gia'],0)?></td>
-                                            <td><?php echo number_format($pro['KhuyenMai'],0)?></td>
+                                            <!-- <td><?php echo number_format($pro['KhuyenMai'],0)?></td> -->
                                             <td>
                                                 <a style="cursor:hand;" onclick="deletePro('<?php echo $pro['IdSP'];?>')">Xóa</a>
                                                 <a href="#" onclick="xemChiTiet('<?php echo $pro['IdSP']?>')">Cập nhật</a>
@@ -101,6 +101,7 @@
                                 </ul>
                                 </div>
                             </div>
+                            <!-- Thêm sản phẩm -->
                             <div id="QuanlySanpham" class="TabContentQL"> 
                                 <div class="bangContent">
                                     <div class="rowContent">
@@ -118,7 +119,7 @@
                                             <label>Tên sản phẩm</label>
                                         </div>
                                         <div class="lblinput">
-                                            <input type="text" id="txtname" name="" value="">
+                                            <input type="text" id="txtname" name="" value="Son dưỡng ">
                                         </div>
                                     </div>
                                     <div class="rowContent">
@@ -162,7 +163,7 @@
                                         </div>
                                         <div class="lblinput">                                        
                                             <div class="inputSize">
-                                                <input type="text" id="txtSL" name="" value="4">                                  
+                                                <input type="text" id="txtSL" name="" value="10">                                  
                                             </div>
                                         </div>
                                     </div>  
@@ -172,44 +173,37 @@
                                             <label>Giá sản phẩm</label>
                                         </div>
                                         <div class="lblinput">
-                                            <input type="text" id="txtGia" value="">
-                                        </div>
-                                    </div>
-                                    <div class="rowContent">
-                                        <div class="lbltitle">
-                                            <label>Giá khuyến mãi</label>
-                                        </div>
-                                        <div class="lblinput">
-                                            <input type="text" id="txtGia" value="">
+                                            <input type="text" id="txtGia" value="140000">
                                         </div>
                                     </div>
                                     <button name="AddProduct" id="AddProduct" onclick="AddProduct()">Thêm sản phẩm</button>
                                 </div>
                             </div>
+                            <!-- Quản lý đơn hàng -->
                             <div id="QuanlyDonhang" class="TabContentQL">
-                            <div class="bangContentt">
-                            <table>                                  
-                                <tr>
-                                    <th id="donhang">Người nhận</th>
-                                    <th>Ngày đặt hàng</th>
-                                    <th>Tổng cộng</th>
-                                    <th>Hành động</th>                  
-                                </tr>  
-                                    <?php if(count($order)>0){ 
-                                        foreach($order as $orders){            
-                                    ?>
-                                    <input type="hidden" id="MaKH" value="<?php echo $orders['IdKH']; ?>">
-                                    <tr>
-                                        <!-- <td><?php echo $orders['IdKH']?></td> -->
-                                        <td class="order"><?php echo $orders['TenKH']?></td>
-                                        <td><?php echo $orders['Ngaydat']?></td>
-                                        <td><?php echo number_format($orders['TongTien'],0)?></td>
-                                        <td><a href="#" onclick="xemDonHang('<?php echo $orders['IdKH']?>')">Xem chi tiết</a></td>             
-                                    </tr>   
-                                    <?php }}?>   
-                                </table>
+                                <div class="bangContentt">
+                                    <table>                                  
+                                        <tr>
+                                            <th id="donhang">Người nhận</th>
+                                            <th>Ngày đặt hàng</th>
+                                            <th>Tổng cộng</th>
+                                            <th>Hành động</th>                  
+                                        </tr>  
+                                        <?php if(count($order)>0){ 
+                                            foreach($order as $orders){            
+                                        ?>
+                                        <input type="hidden" id="MaKH" value="<?php echo $orders['IdKH']; ?>">
+                                        <tr>
+                                            <!-- <td><?php echo $orders['IdKH']?></td> -->
+                                            <td class="order"><?php echo $orders['TenKH']?></td>
+                                            <td><?php echo $orders['Ngaydat']?></td>
+                                            <td><?php echo number_format($orders['TongTien'],0)?></td>
+                                            <td><a href="#" onclick="xemDonHang('<?php echo $orders['IdKH']?>')">Xem chi tiết</a></td>             
+                                        </tr>   
+                                        <?php }}?>   
+                                    </table>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </div>                
             </div>
@@ -293,12 +287,14 @@
                 success: function (data, status, xhr) {
                     //  console.log(data);
                     //  console.log(status);
-                //    if(data==1){
+                   if(data==1){
                     alert("Thêm sản phẩm thành công");
-                //    }
-                //    else{
-                //     alert("Thêm sản phẩm không thành công");
-                //    }
+                    location.reload();
+                   }
+                   else{
+                    alert("Thêm sản phẩm không thành công");
+                   }
+                // alert(data);
                 }
 
             });

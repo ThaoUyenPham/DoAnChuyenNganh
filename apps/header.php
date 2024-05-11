@@ -153,74 +153,11 @@
 			            <div class="f-menu-wrap">
 				            <div class="f-menu">
 					            <ul class="info_menu">
-                                    <li class="home"><a href="<?php echo SITE_ROOT;?>">HOME</a>
-                                        <!-- <div class="menu_box">
-                                            <div class="index-slider-nav">
-                                                <ul>
-                                                    <li>
-                                                        <div class="sticker">
-                                                            <img class="img-fluid" alt="Trang điểm" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_1.png?v=16638">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""><span>Trang điểm</span></a>
-                                                        </div> 
-                                                    </li>	
-                                                    <li>
-                                                        <div class="sticker">
-                                                            <img class="img-fluid" alt="Chăm sóc da mặt" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_2.png?v=16659">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""><span>Chăm sóc da mặt</span></a>
-                                                        </div>
-                                                    <li>
-                                                    <li>
-                                                        <div class="sticker">
-                                                            <img class="img-fluid" alt="Chăm sóc cơ thể" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_3.png?v=16659">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""><span>Chăm sóc cơ thể</span></a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sticker">
-                                                            <img class="img-fluid" alt="Chăm sóc tóc và da đầu" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_4.png?v=16659">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""><span>Chăm sóc tóc và da đầu</span></a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sticker">
-                                                            <img class="img-fluid" alt="Chăm sóc cá nhân" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_5.png?v=16659">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""><span>Chăm sóc cá nhân</span> </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sticker">
-                                                            <img class="img-fluid" alt="Nước hoa" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_6.png?v=16659">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""> <span>Nước hoa</span> </a>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="sticker">
-                                                        <img class="img-fluid" alt="Thiết bị làm đẹp" src="//theme.hstatic.net/1000006063/1000748098/14/vertical_menu_icon_7.png?v=16855">
-                                                        </div>
-                                                        <div class="tittle">
-                                                            <a href=""><span>Thiết bị làm đẹp</span> </a>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>                                            
-                                            
-                                        </div>                                         -->
+                                    <li class="home">
+                                        <a href="<?php echo SITE_ROOT;?>">HOME</a>                                 
                                     </li>
                                     <li><a href="<?php echo SITE_ROOT?>product/admin?per_page=5&page=1">KÊNH NGƯỜI BÁN</a></li>
                                     <li>BÁN CHẠY</li>
-                                    <li>NEW</li>
                                     <li>CHĂM SÓC DA
                                         <span><svg width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 1L5 6L9 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -264,14 +201,6 @@
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <!-- <div class="menu-list-tittle"><span><b>THIẾT BỊ LÀM ĐẸP</b></span>
-                                                        <div>
-                                                            <ul>
-                                                                <li>Máy Chăm Sóc Da</li>
-                                                                <li>Máy rửa mặt</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
@@ -339,7 +268,6 @@
                                             </div>
                                         </div>                                    
                                     </li>
-                                    <li>THƯƠNG HIỆU</li>
                                 </ul>
 		                    </div>
                         </div>

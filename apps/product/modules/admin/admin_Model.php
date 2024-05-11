@@ -24,7 +24,7 @@ class admin_Model extends Model {
         $query = "select sp.Hinh,sp.Tieude,hd.IdKH,hd.Email,hd.SoLuong,TongTien,
         Ngaydat,kh.Sdt,kh.TenKH,kh.Diachi from qldoanchuyennganh.hoadon as hd,
         qldoanchuyennganh.sanpham as sp,qldoanchuyennganh.khachhang as kh 
-        where hd.IdSP=sp.IdSP and kh.IdKH=hd.IdKH GROUP BY Ngaydat"; 
+        where hd.IdSP=sp.IdSP and kh.IdKH=hd.IdKH GROUP BY Email"; 
         return $this->qSelect($query);
     }
     public function getCTDM(){
@@ -40,10 +40,10 @@ class admin_Model extends Model {
        //var_dump($query);die();
         return $this->qDelete($query);
     }
-    public function getThemSanpham($TenSP,$img,$IdDM,$Gia,$IdCTDM,$IdTTCTDM,$SL){
-        $query = "insert into qldoanchuyennganh.sanpham(Tieude,SL,Gia,KhuyenMai,Hinh,IdDM,Id_CTDM,Id_TTCTDM) 
-        values (N'".$TenSP."',".$SL.",'".$img."',".$Gia.",'".$IdDM."','".$IdCTDM."','".$IdTTCTDM."')";
-        //var_dump($query);die();
-        return $this->qInsert($query, true);
+    public function getThemSanpham($TenSP,$SL,$Gia,$img,$IdDM,$IdCTDM,$IdTTCTDM){
+        $query = "	insert into qldoanchuyennganh.sanpham(Tieude,SL, Gia, Hinh,Id_DM,Id_CTDM,Id_TTCTDM) 
+        values(N'".$TenSP."',".$SL.",".$Gia.",'".$img."',".$IdDM.",".$IdCTDM.",".$IdTTCTDM.")";
+        // var_dump($query);die();
+        return $this->qInsert($query);
     }
 }

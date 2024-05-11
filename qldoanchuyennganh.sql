@@ -216,7 +216,8 @@ constraint PK_Admin primary key (IdAdmin)
 
 	insert into qldoanchuyennganh.thongtinctdm(Ten,IdCTDM) values(N'Máy xông hơi',14);
 	insert into qldoanchuyennganh.thongtinctdm(Ten,IdCTDM) values(N'Mặt nạ',14);
-select * from qldoanchuyennganh.sanpham;
+select * from qldoanchuyennganh.sanpham ;
+select * from qldoanchuyennganh.danhmuc;
 	-- san phẩm
 	insert into qldoanchuyennganh.sanpham(Tieude,SL, Gia, KhuyenMai, Hinh,Id_DM,Id_CTDM,Id_TTCTDM) values(N'Son dưỡng Roman mềm môi',3,100000,90000,'tttl/img/img-sonduong1.webp',1,1,1);
 	insert into qldoanchuyennganh.sanpham(Tieude,SL, Gia, KhuyenMai, Hinh,Id_DM,Id_CTDM,Id_TTCTDM) values(N'Son dưỡng Roman 2 mềm môi',4,120000,80000,'tttl/img/img-sonduong2.webp',1,1,1);

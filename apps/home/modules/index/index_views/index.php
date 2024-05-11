@@ -122,8 +122,8 @@
                                     ?>
                                     <div class="product_item">
                                         <div class="product_img">
-                                            <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG.$sl['Hinh'];?>" onclick="xemChiTiet('<?php echo $pro['MaSP']?>')">
+                                            <a href="#" onclick="xemChiTiet('<?php echo $sl['IdSP']?>')">
+                                                <img src="<?php echo SITE_ROOT_IMG.$sl['Hinh'];?>" >
                                             </a>
                                         </div>
                                         <div class="product_text">
@@ -135,8 +135,7 @@
                                                 <p><?php echo $sl['Tieude']?></p>
                                             </div>
                                             <span>
-                                                <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($sl['Gia'],0)?>   -    </p>                             
-                                                <p style="color:#b50014;font-weight:bold"><?php echo number_format($sl['KhuyenMai'],0).'đ'?></p>
+                                                <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($sl['Gia'],0).' '.'đ'?>       </p>                             
                                             </span>
                                                 
                                         </div>                                                            
@@ -160,8 +159,8 @@
                                 <div class="product_col_brand">
                                     <div class="product_item_brand">
                                         <div class="product_img_brand">
-                                            <a href="#">
-                                            <img src="<?php echo SITE_ROOT_IMG.$th['Hinh'];?>" onclick="xemChiTiet('<?php echo $pro['MaSP']?>')">
+                                            <a href="#" onclick="xemChiTiet('<?php echo $th['IdSP']?>')">
+                                            <img src="<?php echo SITE_ROOT_IMG.$th['Hinh'];?>" >
                                             </a>
                                         </div>
 
@@ -174,7 +173,7 @@
                                                 <p><?php echo $th['Tieude']?></p>
                                             </div>
                                         <span>
-                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($th['Gia'],0)?></p>                             
+                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($th['Gia'],0).' '.'đ'?></p>                             
                                             <!-- <p style="color:#b50014;font-weight:bold"><?php echo number_format($th['KhuyenMai'],0).'đ'?></p> -->
                                         </span>
                                         </div>                                                            
@@ -194,8 +193,8 @@
                                  ?>
                                 <div class="product_item">
                                     <div class="product_img">
-                                        <a href="#">
-                                            <img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" onclick="xemChiTiet('<?php echo $pro['MaSP']?>')">
+                                        <a href="#" onclick="xemChiTiet('<?php echo $pro['IdSP']?>')">
+                                            <img src="<?php echo SITE_ROOT_IMG.$pro['Hinh'];?>" >
                                         </a>
                                     </div>
                                     <div class="product_text">
@@ -207,8 +206,8 @@
                                             <p><?php echo $pro['Tieude']?></p>
                                         </div>
                                         <span>
-                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($sl['Gia'],0)?>   -    </p>                             
-                                            <p style="color:#b50014;font-weight:bold"><?php echo number_format($sl['KhuyenMai'],0).'đ'?></p>
+                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($sl['Gia'],0).' '.'đ'?>      </p>                             
+                                            <!-- <p style="color:#b50014;font-weight:bold"><?php echo number_format($sl['KhuyenMai'],0).'đ'?></p> -->
                                         </span>
                                     </div>                                                            
                                 </div>
@@ -233,7 +232,7 @@
                                             <div class="proLoop relative changeimage">
                                                 <div class="proLoop-wrap">
                                                     <div class="productImg">
-                                                        <a href=""><img src="<?php echo SITE_ROOT_IMG.$slNc['Hinh']?>" alt=""></a>
+                                                        <a href="#" onclick="xemChiTiet('<?php echo $slNc['IdSP']?>')"><img src="<?php echo SITE_ROOT_IMG.$slNc['Hinh']?>" alt=""></a>
                                                     </div>
                                                     <div class="proLoop-wrap-info">
                                                         <div class="proLoops">
@@ -244,8 +243,8 @@
                                                             <p><?php echo $slNc['Tieude']?></p>
                                                         </div>
                                                         <span>
-                                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($slNc['Gia'],0)?>   -    </p>                             
-                                                            <p style="color:#b50014;font-weight:bold"><?php echo number_format($slNc['KhuyenMai'],0).'đ'?></p>
+                                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($slNc['Gia'],0).' '.'đ'?>      </p>                             
+                                                            <!-- <p style="color:#b50014;font-weight:bold"><?php echo number_format($slNc['KhuyenMai'],0).'đ'?></p> -->
                                                         </span>
                                                     </div>                                                    
                                                 </div>
@@ -264,7 +263,7 @@
                                             <div class="proLoop relative changeimage">
                                                 <div class="proLoop-wrap">
                                                     <div class="productImg">
-                                                        <a href=""><img src="<?php echo SITE_ROOT_IMG.$slS['Hinh']?>" alt=""></a>
+                                                        <a href="#" onclick="xemChiTiet('<?php echo $slS['IdSP']?>')"><img src="<?php echo SITE_ROOT_IMG.$slS['Hinh']?>" alt=""></a>
                                                     </div>
                                                     <div class="proLoop-wrap-info">
                                                         <div class="proLoops">
@@ -275,8 +274,8 @@
                                                             <p><?php echo $slS['Tieude']?></p>
                                                         </div>
                                                         <span>
-                                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($slS['Gia'],0)?>   -    </p>                             
-                                                            <p style="color:#b50014;font-weight:bold"><?php echo number_format($slS['KhuyenMai'],0).'đ'?></p>
+                                                            <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($slS['Gia'],0).' '.'đ'?>     </p>                             
+                                                            <!-- <p style="color:#b50014;font-weight:bold"><?php echo number_format($slS['KhuyenMai'],0).'đ'?></p> -->
                                                         </span>
                                                     </div>                                                    
                                                 </div>
@@ -301,7 +300,7 @@
                                     <div class="product_item">
                                         <div class="product_img">
                                             <a href="#">
-                                                <img src="<?php echo SITE_ROOT_IMG.$hair['Hinh'];?>" onclick="xemChiTiet('<?php echo $pro['MaSP']?>')">
+                                                <img src="<?php echo SITE_ROOT_IMG.$hair['Hinh'];?>" onclick="xemChiTiet('<?php echo $hair['IdSP']?>')">
                                             </a>
                                         </div>
                                         <div class="product_text">
@@ -313,7 +312,7 @@
                                                 <p><?php echo $hair['Tieude']?></p>
                                             </div>
                                             <span>
-                                                <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($hair['Gia'],0)?></p>
+                                                <p style="color:#b50014;font-weight:bold;float:left"><?php echo number_format($hair['Gia'],0).' '.'đ'?></p>
                                             </span>                                        
                                         </div>                                                            
                                     </div>
@@ -333,7 +332,9 @@
 </html>
 <script>
    
-
+   function xemChiTiet(IdSP){
+        window.open("<?php echo SITE_ROOT ?>product/chitietsanpham?msp="+IdSP, "_top");
+    }
 
 
 
