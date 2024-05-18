@@ -9,6 +9,11 @@ class chitietsanpham_Model extends Model {
                   where IdSP=".$msp;
         return $this->qSelect($query);
     }
+    public function getAmount($msp){
+        $query = "select IdSP,SL from qldoanchuyennganh.sanpham 
+                  where IdSP=".$msp;
+        return $this->qSelect($query);
+    }
     public function getLuusanpham($IdSP,$Tieude,$amount,$Gia,$Hinh){
         $query = "insert into qldoanchuyennganh.giohang(IdSP,Tieude,SL,Gia,Hinh,IPAddress) 
         values ('".$IdSP."',N'".$Tieude."',".$amount.",".$Gia.",'".$Hinh."','".$_SESSION['IPAddress']."')";

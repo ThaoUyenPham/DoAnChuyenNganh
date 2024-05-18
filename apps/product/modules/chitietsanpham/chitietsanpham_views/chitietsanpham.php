@@ -54,7 +54,17 @@
                      </div>
                      <form action="" name="muahang" id="muahang" method="post">
                         <?php if(count($products) > 0){ 
-                           foreach($products as $pro){?>
+                           foreach($products as $pro){
+                              if(count($products) == 1){
+                                 $gt = $products[0];
+                                 
+                                 if($gt['SL']!=0)
+                                    $kq=$gt['SL'];
+                                 else
+                                    $kq = "hết hàng";
+                             }
+                              
+                        ?>
                         <div class="thanhtoan">  
                            <h2 id="tenSP"><?php echo $pro['Tieude']?></h2>
                            <br>
@@ -72,7 +82,7 @@
                                             </div>
                                         </div>
                               </div>                              
-                              <a style="font-size: 15px;color: gray;">Số lượng sản phẩm có sẵn: <?php echo $pro['SL']?> </a>
+                              <p style="float:left;">Số lượng sản phẩm có sẵn:</p><p style="font-size: 15px;font-weight:bold;color:red"><?php echo $kq?> </p>
                               <br>
                               <br>
                               <p class = "nhap"style="padding-left: 30px;">

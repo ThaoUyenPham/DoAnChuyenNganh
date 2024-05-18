@@ -13,7 +13,7 @@ class chinhsuasp_Model extends Model {
     public function getCapNhatSanpham($IdSP,$Tieude,$MaDM,$SLSP,$GIA){
         $query = " update qldoanchuyennganh.sanpham set Tieude='".$Tieude."',
         Id_DM='".$MaDM."',SL=".$SLSP.",Gia=".$GIA." where IdSP='".$IdSP."'";
-        var_dump($query);die(); 
+        // var_dump($query);die(); 
         return $this->qUpdate($query);
     }
 }

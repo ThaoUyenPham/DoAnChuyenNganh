@@ -20,8 +20,15 @@ class chitietsanpham_Controller extends Controller {
         
         if(!empty($msp)){
             $viewData['products'] = $this->model->getChiTietSanPham($msp);
-            $viewData['IdSP'] = $msp;             
-            $this->getView()->render('chitietsanpham', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
+            $viewData['IdSP'] = $msp;  
+            $result = $this->getView()->render('chitietsanpham', $viewData);//khai bao khi goi ham index thi se ra file giao dien nao len
+            if(count($result) == 1){
+                // $gt = $result[0];
+                if($result['SL']!=0)
+                    echo $result['SL'];
+                else
+                    echo "hết hàng";
+            }         
         }else{
             $this->getView()->render('error404');   
         }//khai bao khi goi ham index thi se ra file giao dien nao len
@@ -31,8 +38,8 @@ class chitietsanpham_Controller extends Controller {
         $result = $this->model->getAmount($msp);
         if(count($result) == 1){
             $gt = $result[0];
-            if($gt['SLT']!=0)
-                echo $gt['SLT'];
+            if($gt['SL']!=0)
+                echo $gt['SL'];
             else
                 echo "hết hàng";
         }
