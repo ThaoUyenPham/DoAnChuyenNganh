@@ -24,6 +24,7 @@ class admin_Controller extends Controller {
         $viewData['ctdm'] =  $this->model->getCTDM(); 
         $viewData['ttctdm'] =  $this->model->getTTCTDM(); 
         $viewData['order']=$this->model->getDonHang();
+        $viewData['thongke']=$this->model->getThongKe();
         if($item_per_page==0){
             echo "Khong co san pham";
         }

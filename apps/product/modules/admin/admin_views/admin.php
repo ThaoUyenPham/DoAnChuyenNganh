@@ -38,8 +38,8 @@
                             <ul class="sidebar-menu">
                                 <li><a class="tablinks" onclick="OpenTab(event, 'XemSanpham')"><i class="fa fa-home"></i> Quản Lý Sản Phẩm</a></li>
                                 <li><a class="tablinks" onclick="OpenTab(event, 'QuanlySanpham')"><i class="fa fa-pencil"></i> Thêm sản phẩm</a></li>
-                                <li><a class="tablinks" onclick="OpenTab(event, 'QuanlyDonhang')"><i class="fa fa-pencil"></i>Quản lý đơn hàng</a></li>
-                                
+                                <li><a class="tablinks" onclick="OpenTab(event, 'QuanlyDonhang')"><i class="fa fa-square"></i>Quản lý đơn hàng</a></li>
+                                <li><a class="tablinks" onclick="OpenTab(event, 'ThongkeSP')"><i class="fa fa-bar-chart"></i>Thống kê sản phẩm bán chạy</a></li>
                             </ul>
                             <!-- <div class="sidebar-footer" style="color: #333;">
                                 <a href="/apps/home/modules/index/index_views/index.php" style="color: cornsilk; text-decoration:none"><i class="fa fa-sign-out"></i> Logout</a>
@@ -134,7 +134,7 @@
                                                         <?php 
                                                             if(count($danhmuc) > 0){ 
                                                                 foreach($danhmuc as $dm){?>                                             
-                                                        <option value="<?php echo $dm['IdDM']?>"><?php echo $dm['TenDM']?></option>
+                                                            <option value="<?php echo $dm['IdDM']?>"><?php echo $dm['TenDM']?></option>
                                                         <?php }}?>
                                                     </select>
                                                     <select id="IdCTDM" name="IdCTDM" > 
@@ -199,6 +199,29 @@
                                             <td><?php echo $orders['Ngaydat']?></td>
                                             <td><?php echo number_format($orders['TongTien'],0)?></td>
                                             <td><a href="#" onclick="xemDonHang('<?php echo $orders['IdKH']?>')">Xem chi tiết</a></td>             
+                                        </tr>   
+                                        <?php }}?>   
+                                    </table>
+                                </div>
+                            </div>
+                            <div id="ThongkeSP" class="TabContentQL">
+                                <div class="bangContentt">
+                                    <h3 style="margin-top:10px;">THỐNG KÊ SẢN PHẨM BÁN CHẠY</h3>
+                                    <table>                                  
+                                        <tr>
+                                            <th>Mã Sản Phẩm</th>
+                                            <th>Tên Sản Phẩm</th>
+                                            <th>Tổng Số Lượng Khách Đã Đặt</th>                  
+                                        </tr>  
+                                        <?php if(count($thongke)>0){ 
+                                            foreach($thongke as $thongke){            
+                                        ?>
+                                        <tr>
+                                            
+                                            <td><?php echo $thongke['IdSP']?></td>
+                                            <td><?php echo $thongke['Tieude']?></td>
+                                            <td><?php echo $thongke['total_quantity']?></td>
+                                            
                                         </tr>   
                                         <?php }}?>   
                                     </table>

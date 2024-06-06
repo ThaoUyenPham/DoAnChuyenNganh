@@ -220,6 +220,7 @@
 /**/
 .bangContentt{
     width: 100%;
+    padding:10px;
     height: 30em;
     position: relative;
     background-color: #ffff;
@@ -247,4 +248,7 @@
 
 .bangContentt .rowContent .lblinput input{
     width: 100%;
+}
+.sidebar-menu li a i{
+    margin-right: 10px;
 }

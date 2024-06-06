@@ -68,6 +68,7 @@ class dathang_Controller extends Controller {
            
         }
         echo "Đã đặt hàng thành công";
+        
         return ['results' => $results, 'kqSP' => $kqSP];
         
         //return $results; // Trả về mảng kết quả

@@ -31,13 +31,13 @@
                 <from class = "form-login" method="post">
                     <h1>Đăng nhập</h1>
                     <div class="form-text">
-                        <input type="text" name="Email" id="user" value="uyen12@gmail.com">
+                        <input type="text" name="Email" id="user" value="mai12@gmail.com">
                     <label for="myInput">Email</label>
                     
                     </div>
 
                     <div class="form-text">
-                        <input type="password" id="MatkhauInput" value="Uyen@123">
+                        <input type="password" id="MatkhauInput" value="Maiii@!23">
                         <label for="pasInput">Matkhau</label>
                     </div>
 

@@ -74,8 +74,8 @@
                                                     <a id="btn_delete" onclick="deleteSP('<?php echo $pro['IdG'];?>')" style="cursor: hand;">
                                                     <i class="fa fa-trash-o" style="cursor:hand;"></i></a></td>
                                                 <td class="product_id" val="<?php echo $pro['IdG']; ?>"><?php echo $pro['IdG']?></td>
-                                                <td class="product_thumb"><a href="#"><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh']?>" alt=""></a></td>
-                                                <td class="product_name"><a href="#"><?php echo $pro['Tieude']?></a></td>
+                                                <td class="product_thumb"><img src="<?php echo SITE_ROOT_IMG.$pro['Hinh']?>" alt=""></td>
+                                                <td class="product_name"><?php echo $pro['Tieude']?></td>
                                                 <td class="product-price" id="price<?php echo $pro['IdG']?>" val="<?php echo $pro['Gia']?>"><?php echo number_format ($pro['Gia'],0)?></td>
                                                 
                                                 <td class="product_quantity">

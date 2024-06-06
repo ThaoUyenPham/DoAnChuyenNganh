@@ -31,6 +31,15 @@ class admin_Model extends Model {
         $query = "select * from qldoanchuyennganh.ctdm"; 
         return $this->qSelect($query);
     }
+    public function getThongKe(){
+        $query = "select sp.IdSP, sp.Tieude, SUM(hd.SoLuong) as total_quantity
+        FROM qldoanchuyennganh.sanpham as sp
+        JOIN qldoanchuyennganh.hoadon as hd ON sp.IdSP = hd.IdSP
+        GROUP BY sp.IdSP, sp.Tieude
+        ORDER BY total_quantity DESC
+        LIMIT 10"; 
+        return $this->qSelect($query);
+    }
     public function getTTCTDM(){
         $query = "select * from qldoanchuyennganh.thongtinctdm"; 
         return $this->qSelect($query);
